@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+        }
+
+        .sub{
+            height: 100px;
+            width: 100px;
+        }
+
+        .sub:nth-child(even){
+            background-color: brown;
+        }
+
+        .sub:nth-child(odd){
+            background-color: teal;
+        }
+
+        .sub:nth-child(1){
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+        }
+
+        .sub:nth-child(2){
+            flex:2 1 10%
+        }
+
+        .sub:nth-child(3){
+            flex: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+        <div class="sub"></div>
+    </div> 
+</body>
+</html>
