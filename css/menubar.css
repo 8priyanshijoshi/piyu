@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+header .main{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px 0;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo{
+    flex: 0.2;
+}
+
+header .navbar .logo h1{
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+header .navbar .logo i{
+    color: cornflowerblue;
+}
+
+header .navbar .nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar .nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navbar .nav ul li a{
+    font-weight: 600;
+    color:brown;
+}
+
+
+header .navbar .nav .search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .navbar .nav .search button{
+    padding: 10px 15px;
+    font-size: 19px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    word-spacing: 10px;
+}

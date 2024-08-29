@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 8px;
+        }
+
+        tr:nth-child(odd){
+            background-color: blueviolet;
+        }
+        tr:nth-child(even){
+            background-color: cadetblue;
+        }
+        tr:first-child{
+            background-color: aqua;
+            color: white;
+        }
+        tr:last-child{
+            background-color: blanchedalmond;
+            color: blueviolet;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .box:nth-child(3){
+            background-color: burlywood;
+        }
+
+        .box:nth-child(2){
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" style = background-color:lightblue>
+        <tr>
+            <th>ROLL NO.</th>
+            <td>SR NO.</td>
+            <td>SUBJECT</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>101</td>
+            <td>html</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>102</td>
+            <td>css</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>103</td>
+            <td>java</td>
+        </tr>
+    </table>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

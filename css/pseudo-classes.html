@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link1 :link{
+            color: black;
+        }
+
+        .link :any-link{
+            color: blue;
+        }
+
+        .link3 :active{
+            color: cadetblue;
+        }
+
+        .link4 :visited{
+            color: magenta;
+        }
+
+        .link5 :hover{
+            color: salmon;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 40px;
+            background: olivedrab;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            color: blueviolet;
+            background-color: transparent;
+        }
+
+        input{
+            border: 1px solid gray;
+        }
+
+        :focus-visible{
+            outline: none;
+        }
+
+        :focus{
+            box-shadow: 0 0 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="link1">click here</a>
+    <a href="#" class="link2">click here</a>
+    <a href="#" class="link3">click here</a>
+    <a href="#" class="link4">click here</a>
+    <a href="#" class="link5">click here</a>
+
+    <br><br>
+
+    <button>click on me</button>
+    <input type="text">
+</body>
+</html>
