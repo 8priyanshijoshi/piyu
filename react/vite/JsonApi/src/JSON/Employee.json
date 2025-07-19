@@ -1,0 +1,41 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "employeename": "Piyu",
+      "city": "surat",
+      "designation": "SoftwareDeveloper",
+      "mobileno": 7345278969,
+      "salary": "30000",
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg"
+    },
+    {
+      "id": "2",
+      "employeename": "Dixit",
+      "city": "palanpur",
+      "designation": "Manager",
+      "mobileno": 9856704578,
+      "salary": 40000,
+      "profile": "https://th.bing.com/th/id/OIP.s_HoeMmvEH3pF1_Gljye8wHaHa?pid=ImgDet&w=186&h=186&c=7&dpr=1.4"
+    },
+    {
+      "id": "3",
+      "employeename": "priyanshi joshi",
+      "city": "Navsari",
+      "mobileno": "94567834567",
+      "designation": "Manager",
+      "salary": "45000",
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg",
+      "empname": "piyu"
+    },
+    {
+      "id": "4",
+      "employeename": "Ayushi",
+      "city": "Navsari",
+      "mobileno": "07456389087",
+      "designation": "Manager",
+      "salary": "35000",
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg"
+    }
+  ]
+}

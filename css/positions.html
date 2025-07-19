@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+        .top-left{
+            background-color: blueviolet;
+            top: 0;
+            left: 0;
+        }
+        .top-right{
+            background-color: brown;
+            top: 0;
+            right: 0;
+        }
+        .bottom-right{
+            background-color: burlywood;
+            bottom: 0;
+            right: 0;
+        }
+        .bottom-left{
+            background-color: cadetblue;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box top-left">TL</div>
+    <div class="box top-right">TR</div>
+    <div class="box bottom-right">BR</div>
+    <div class="box bottom-left">BL</div>
+</body>
+</html>

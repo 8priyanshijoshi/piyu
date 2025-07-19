@@ -1,0 +1,2174 @@
+						HTML/HTML5
+
+14. Explain HTML structure
+HTML (HyperText Markup Language) is the foundation of web pages. Its basic structure includes:
+
+<!DOCTYPE html>: Declares the document type.
+
+<html>: The root element.
+
+<head>: Contains metadata, styles, and scripts.
+
+<body>: Contains visible webpage content like text, images, links, and tables.
+
+15. What is HTML? How are HTML tags formed? Explain HTML comments.
+HTML: A markup language used to structure content on the web.
+
+HTML Tags: Formed using angle brackets (<tag> and </tag>), defining elements within a document.
+
+Comments: Written as <!-- This is a comment --> and are ignored by browsers.
+
+16. What is the use of the Anchor (<a>) tag? Explain two ways to specify a URL in the href attribute.
+Used to create hyperlinks.
+
+Ways to specify URLs in href:
+
+Absolute URL: "https://example.com" (direct link to another site).
+
+Relative URL: "page.html" (link within the same website).
+
+
+17. How to create a hyperlink in HTML?
+Use the <a> tag:
+
+html
+<a href="https://example.com">Click here</a>
+
+18. Relative paths make your hypertext links ________________.
+Dependent on the current location (relative to the directory).
+
+19. Which type of HTML link is defined in the following example?
+Could you provide the example? I’d be happy to clarify!
+
+20. Why are images used on web pages?
+They improve visual appeal, convey information, and enhance user experience.
+
+21. What is the default value of the target attribute in <a>?
+_self (opens in the same window).
+
+22. Types of lists in HTML:
+Ordered (<ol>)
+
+Unordered (<ul>)
+
+Definition (<dl>)
+
+23. HTML tags for creating tables & five brief explanations:
+<table>: Defines the table.
+
+<tr>: Defines a row.
+
+<td>: Defines a cell.
+
+<th>: Defines a header cell.
+
+<caption>: Adds a table title.
+
+24. What is a caption?
+A title or description for a table, written inside <caption>.
+
+25. Which attribute allows you to add descriptive text to a table?
+summary
+
+26. Which HTML attribute sets space between cells?
+cellspacing
+
+27. Which attribute spans table cells across columns?
+colspan
+
+28. Which has higher priority in a table: cell settings or table settings?
+Cell settings.
+
+29. HTML attribute values are usually enclosed in?
+HTML attribute values are typically enclosed in double ("") or single ('') quotes. Example:
+
+html
+<img src="image.jpg" alt="Example Image">
+
+30. HTML Entities. To display a less than sign we must write:
+Use &lt; to display < in HTML. Example:
+
+html
+
+&lt;div&gt;
+
+31. For a radio button to be marked as 'on', what is the recommended attribute and value?
+Use the checked attribute:
+
+html
+<input type="radio" name="option" value="1" checked>
+
+32. HTML5 - What is a new attribute for <input>?
+The placeholder attribute is new in HTML5, providing a hint inside the input field:
+
+html
+<input type="text" placeholder="Enter your name">
+
+33. Internal format of <input type="date"> in HTML5?
+It follows YYYY-MM-DD, complying with ISO 8601. Example:
+
+html
+<input type="date" value="2025-06-04">
+
+34. Input types in HTML:
+Some common types:
+
+text
+
+password
+
+radio
+
+checkbox
+
+file
+
+submit
+
+reset
+
+35. New input types in HTML5:
+HTML5 introduced:
+
+email
+
+url
+
+number
+
+range
+
+date
+
+time
+
+search
+
+color
+
+36. Use of <fieldset>?
+Groups related form fields for better structure and accessibility. Example:
+
+html
+<fieldset>
+  <legend>Personal Information</legend>
+  <label>Name: <input type="text"></label>
+</fieldset>
+
+37. Use of <nav> tag?
+Defines navigation links in a webpage. Example:
+
+html
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
+
+38. Difference between <span> and <div>?
+<span>: Inline container, used for small parts inside text.
+
+<div>: Block-level container, used for larger sections.
+
+39. How to embed JavaScript in HTML?
+Using <script> inside <head> or <body>:
+
+html
+<script>
+  alert("Hello, World!");
+</script>
+
+40. How to specify line breaks in HTML?
+Use <br> to break lines. Example:
+
+html
+<p>First line.<br>Second line.</p>
+
+41. Explain HTML5 Elements:
+HTML5 introduced new semantic elements like:
+
+<header>
+
+<footer>
+
+<section>
+
+<article>
+
+<aside>
+
+42. Tag for displaying video in HTML5?
+Use <video> with controls:
+
+html
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+43. HTML Event Attribute - When does onunload fire?
+It fires when a page is closed or navigated away from:
+
+html
+<body onunload="alert('Goodbye!')">
+
+
+
+
+
+
+
+
+
+1.	What is HTML? HTML (HyperText Markup Language) is the standard language used to create web pages. It provides the structure of a webpage using elements like headings, paragraphs, links, images, and more.
+2.	Who’s the founder of HTML? HTML was created by Tim Berners-Lee in 1991 while he was developing the World Wide Web.
+3.	What is <!DOCTYPE> in HTML? The <!DOCTYPE> declaration specifies the document type and version of HTML being used, ensuring that browsers render the page correctly.
+4.	What is <meta> tag? The <meta> tag provides metadata about the document, such as character encoding, viewport settings for responsiveness, and SEO-related descriptions.
+5.	How to navigate from one page to another page? You can use the <a> (anchor) tag with the href attribute to link to another page:
+
+<a href="page2.html">Go to Page 2</a>
+6.	What is an inline tag? Inline tags are HTML elements that do not start on a new line and only take up as much width as necessary. Examples include <span>, <b>, <i>, and <a>.
+7.	Which tag is used to set formatting on any text? Tags like <b> for bold, <i> for italic, <u> for underline, <mark> for highlighting, and <strong> for important text formatting are commonly used.
+8.	What is the use of <picture> tag? The <picture> tag helps in responsive images by allowing multiple image sources to be loaded depending on screen size or device resolution.
+9.	Which tags are dropped in the new version? In HTML5, several tags like <font>, <center>, <big>, and <strike> were removed as they are now handled via CSS.
+10.	Which attributes are dropped in the new version? Deprecated attributes include align in many elements, bgcolor, border, and frameborder, as these are now managed using CSS.
+11.	How many types of lists? HTML supports three types of lists:
+•	Ordered List (<ol>) for numbered lists.
+•	Unordered List (<ul>) for bulleted lists.
+•	Description List (<dl>) for term-definition pairs.
+12.	What is the use of the <iframe> tag? The <iframe> tag is used to embed another HTML page or external content within a webpage, such as Google Maps or YouTube videos.
+13.	Which tag is used to apply an ImageMap on an image? The <map> tag along with <area> elements is used to define clickable regions on an image.
+14.	What is the use of <details> and <summary> tags? <details> creates an expandable section, while <summary> provides a clickable heading for that section.
+15.	What is the use of <q> tag? The <q> tag is used to enclose short inline quotations, automatically adding quotation marks.
+16.     What is a table? A table in HTML is used to organize data in a structured format using rows and columns.
+17.     Which tags are used to create table rows and columns?
+•	<table>: Defines a table.
+•	<tr>: Defines a table row.
+•	<td>: Defines a table cell (column).
+•	<th>: Defines a header cell.
+18.  Describe <colgroup>. The <colgroup> tag is used to group multiple columns in a table and apply styling or attributes collectively.
+19.  What is the <embed> tag used for? The <embed> tag is used to embed external content like videos, audio, or interactive elements into a webpage.
+20.  Which tags are used to create an HTML layout? Common layout-related tags include <header>, <nav>, <section>, <article>, <aside>, <footer>, and <div>.
+21.  What is a semantic tag? Semantic tags clearly define the meaning of content, making it more accessible. Examples include <header>, <article>, <footer>, <nav>, and <section>.
+22.  What is a non-semantic tag? Non-semantic tags don’t convey meaning by themselves. Common examples include <div> and <span>.
+23.  What is the use of <div> and <span> tags?
+•	<div>: A block-level element used to group sections for styling/layout.
+•	<span>: An inline element used to style or manipulate part of text within another element.
+24.  What are the elements of an HTML form? A form includes elements like <input>, <textarea>, <label>, <button>, <select>, <option>, and <fieldset>.
+25.  Which main attributes affect the <form> tag? Important attributes include:
+•	action: Specifies the URL where data will be sent.
+•	method: Defines how data is sent (GET or POST).
+•	target: Specifies where to display the response.
+•	autocomplete: Enables or disables auto-fill.
+26.  List out <input> types. Some common <input> types are:
+•	text
+•	password
+•	email
+•	radio
+•	checkbox
+•	file
+•	submit
+•	reset
+•	date
+•	color
+•	range
+27.  What is <textarea> used for? The <textarea> tag is used for multi-line text input, allowing users to enter longer content than a standard input field.
+28.  Which tags are used to create a dropdown list?
+•	<select>: Defines the dropdown.
+•	<option>: Represents individual choices within the dropdown.
+29.  Which tags are used to create graphics on a webpage? The <canvas> and <svg> tags are used to create graphics.
+30.  What does <svg> stand for? Scalable Vector Graphics—It allows for drawing shapes, paths, and graphics that can scale without losing quality.
+31.  What is a tag? In HTML, a tag is an instruction that defines elements within a webpage. Tags are enclosed in angle brackets (<>), such as <p>, <a>, and <div>.
+32.  What is an attribute? Attributes provide additional information about an HTML tag. They appear inside the tag and define characteristics such as size, color, or functionality. Example:
+	<img src="image.jpg" alt="A beautiful image">
+	Here, src and alt are attributes of the <img> tag.
+33.  What is an element? An HTML element consists of an opening tag, content (sometimes optional), and a closing tag. Example:
+	<p>This is a paragraph.</p>
+34.  What are opening and closing tags?
+•	Opening tag: <p> (starts the element)
+•	Closing tag: </p> (ends the element) Some elements like <br> and <img> are self-closing.
+35.  Which tags are non-closing tags? These tags do not require a closing tag:
+•	<br> (line break)
+•	<hr> (horizontal rule)
+•	<img> (image)
+•	<input> (form input)
+36.  Which tag is used to set a favicon? The <link> tag is used to add a favicon inside <head>:
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+37.  What is the use of the target attribute in the <a> tag? The target attribute controls how the linked page opens:
+•	_self: Opens in the same tab (default)
+•	_blank: Opens in a new tab/window
+•	_parent: Opens in the parent frame
+•	_top: Opens in the full browser window
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+						CSS/CSS3
+
+
+1. CSS Full Form CSS stands for Cascading Style Sheets, used to style HTML elements.
+
+
+2. Types of CSS
+	Inline CSS: Defined directly inside an HTML element using the style attribute.
+	Internal CSS: Written within a <style> tag inside the <head> section of an HTML document.
+	External CSS: Defined in a separate .css file and linked to an HTML file.
+
+
+3. Which CSS is Preferred First in an HTML File? The preference follows this hierarchy:
+	Inline CSS overrides internal and external styles.
+	Internal CSS overrides external styles.
+	External CSS is the least specific but keeps code clean.
+
+
+4.Which Tag Links a CSS File in HTML? The <link> tag is used to connect an external CSS file:
+	<link rel="stylesheet" href="styles.css">
+
+5.How to Set Google Font? Include a Google Fonts link inside <head>:
+	html
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	Then, use it in CSS:
+	css
+	body {
+   	font-family: 'Roboto', sans-serif;
+	}
+
+5. How Many Properties Are Used to Set a Background Image? Common background properties:
+	background-image
+	background-size
+	background-position
+	background-repeat
+	background-attachment
+	background-color
+
+7. Border-Radius Property Use The border-radius property creates rounded corners for elements.
+
+8.Use of background-origin and background-clip
+	background-origin controls where the background starts (padding-box, border-box, content-box).
+	background-clip controls where the background should be visible (padding-box, border-box, content-box).
+
+
+9.How to Set Gradient Colors on Borders? Use border-image with a gradient:
+	css
+	border-image: linear-gradient(red, blue) 1;
+
+10.Types of Gradient Colors
+	Linear Gradient (linear-gradient())
+	Radial Gradient (radial-gradient())
+	Conic Gradient (conic-gradient())
+
+
+11.What is a Gradient Color? A smooth transition between multiple colors, used for backgrounds and design effects.
+
+12.Use of filter Property Applies visual effects like blur, brightness, contrast, and more.
+
+13.Effect of display: flex Enables a flexible layout, making items adjust dynamically within a container.
+
+14.Effect of display: grid Allows elements to be arranged in a grid-like structure with defined rows and columns.
+
+
+15. How to Merge Cells in Grid? Use grid-column and grid-row properties:
+	grid-column: span 2;
+	grid-row: span 2;
+
+16.Effect of flex-wrap Property Controls whether items wrap within a flex container.
+
+17.Effect of place-content, place-self, and place-items These properties control alignment and positioning inside flex or grid containers.
+
+18.Descriptions of place-content, place-self, and place-items
+	place-content: Aligns content inside a container.
+	place-self: Aligns a single element within the container.
+	place-items: Aligns items within the container.
+
+
+19. Descriptions of justify-content, justify-items, justify-self
+	justify-content: Aligns items along the main axis.
+	justify-items: Aligns items within their respective containers.
+	justify-self: Aligns a single item.
+
+
+20. Descriptions of align-content, align-items, align-self
+	align-content: Controls spacing along the cross axis.
+	align-items: Aligns items within their container.
+	align-self: Aligns a specific item.
+
+
+21. Difference Between background-blend-mode and mix-blend-mode
+	background-blend-mode: Blends background layers.
+	mix-blend-mode: Blends an element with its surroundings.
+
+
+22. Difference Between backdrop-filter and filter Property
+	filter: Applies effects to an element.
+	backdrop-filter: Applies effects to the background behind an element.
+
+
+23. When Does the gap Property Affect Layouts? The gap property works in flex and grid layouts to control space between items.
+
+
+24. How to Apply align-content Property?
+	.container {
+  	display: flex;
+  	align-content: center;
+	}
+
+25. What is a Media Query? Media queries make websites responsive based on screen size:
+	@media (max-width: 600px) {
+  	body {
+    	background-color: lightblue;
+  	}	
+	}
+
+26. Which Property Makes Images Responsive? Use max-width and height:
+	img {
+  	max-width: 100%;
+  	height: auto;
+	}
+
+27. What is a CSS Transition? Defines smooth animation between states. Example:
+	div {
+  	transition: background-color 0.5s ease-in-out;
+	}
+
+28. What is transform and Its Functions? transform modifies elements with functions:
+	rotate()
+	scale()
+	translate()
+	skew()
+
+
+29. How to Create an Animation in CSS? Use @keyframes and animation:
+	@keyframes fadeIn {
+  		from { opacity: 0; }
+  		to { opacity: 1; }
+	}
+	div {
+  		animation: fadeIn 2s linear;
+	}
+
+20.How to Link One CSS File to Another? Use @import inside the main CSS file:
+	@import url("styles.css");
+
+
+31. List of CSS Selectors
+	Universal (*): Selects all elements.
+	Element (div): Selects all <div> elements.
+	Class (.classname): Selects elements with a specific class.
+	ID (#idname): Selects an element with a specific ID.
+	Attribute ([type="text"]): Selects elements based on attributes.
+	Sibling (+, ~): Selects adjacent or general sibling elements.
+	Child (>): Selects direct child elements.
+	Pseudo-classes (:hover, :nth-child(n)): Apply styles based on state.
+	Pseudo-elements (::before, ::after): Style parts of elements.
+
+
+32.Effect of Padding and Margin
+	Padding: Creates space inside the element (between content and border).
+	Margin: Creates space outside the element (between the element and others).
+
+
+33. Difference Between CSS, CSS2, and CSS3
+	CSS (1996): Basic styles.
+	CSS2 (1998): Improved layout options.
+	CSS3 (2001-present): Modular updates with features like flexbox, grid, animations, and gradients.
+
+34.Use of box-sizing
+	Controls how the total width and height of an element are calculated, preventing overflow issues.
+
+35. Use of box-shadow and text-shadow
+	box-shadow: Adds shadow effects to elements.
+	text-shadow: Adds shadow effects to text.
+
+
+36.When to Apply overflow
+	Manages content that exceeds container size (hidden, scroll, auto, visible).
+
+37. Text Properties
+	text-wrap: Defines how text breaks.
+	text-stroke: Adds a stroke around text (not widely supported).
+	text-indent: Controls the indentation of the first line.
+
+
+38. Use of top, bottom, left, and right
+	Positions elements when used with position: relative, absolute, or fixed.
+
+
+39. Use of z-index
+	Controls layering; higher values appear above lower values.
+
+
+40.Use of float and clear
+	float: Positions elements to the left or right.
+	clear: Prevents elements from wrapping around floating elements.
+
+
+41. What is the Box Model?
+	Represents an element’s layout with:
+	Content
+	Padding
+	Border
+	Margin
+
+
+42.How to Use max-width
+	div {
+  		max-width: 800px;
+	}
+	Prevents an element from exceeding the specified width.
+
+
+43.Pseudo-class vs. Pseudo-element
+	Pseudo-class (:hover): Applies styles based on state.
+	Pseudo-element (::before): Styles part of an element.
+
+
+44. Effect of opacity
+	Controls transparency (opacity: 0 hides, opacity: 1 is fully visible).
+
+
+45. Use of object-fit and object-position
+	object-fit: Adjusts how images fill containers.
+	object-position: Defines the placement inside the container.
+
+
+46. How to Apply CSS Comments	
+	/* This is a CSS comment */
+
+
+47. Difference Between visibility: hidden and display: none
+	visibility: hidden: Hides an element but keeps its space.
+	display: none: Removes the element entirely from the layout.
+
+
+
+1. What does CSS stand for? CSS stands for Cascading Style Sheets, which is used to style and format HTML elements.
+
+
+2. Which HTML tag is used to define an internal style sheet? The <style> tag is used inside the <head> section to define internal CSS styles.
+
+
+3. Which HTML attribute is used to define inline CSS? The style attribute allows you to apply inline CSS directly within an element:
+	html
+	<p style="color: red;">This text is red.</p>
+
+
+4. Which is the correct CSS syntax? CSS syntax follows this structure:
+	css
+	selector {
+   	property: value;
+	}
+	Example:
+
+	css
+	h1 {
+   	color: blue;
+   	font-size: 20px;
+	}
+
+5.TRUE/FALSE – CSS is case-sensitive? False – CSS itself is not case-sensitive, but class and ID names are case-sensitive when used in HTML.
+
+
+6. How do you insert a comment in a CSS file? Comments in CSS use /* */ syntax:
+	/* This is a CSS comment */
+
+
+7. Which of the following tells the browser where you want to apply the rule? Selectors define which elements the CSS rules apply to.
+
+
+8. What is NOT an advantage of using CSS files? One disadvantage is dependency on external files—if the CSS file is missing or blocked, styles may not load properly.
+
+9.True or False: The borders of an element can vary only up to 2 sides? False – Borders can be applied to all four sides (top, right, bottom, and left), each with different styles.
+
+
+10. Which property is used to specify table borders in CSS? The border property is used to define table borders:
+	table {
+   		border: 1px solid black;
+	}
+
+11. CSS shorthand to set borders on all four sides You can use the border-width property:
+	border-width: 10px 1px 5px 20px;
+	(Order: top, right, bottom, left)
+
+12. TRUE/FALSE – The borders of an element can vary only up to 2 sides? False – You can set different border styles, colors, and widths on all four sides independently.
+
+13. Correct use of border-radius border-radius is used to round corners:
+	border-radius: 10px;
+	You can also set individual corners:
+	border-radius: 10px 5px 20px 1px; /* Top-left, top-right, bottom-right, bottom-left */
+
+14.Property to change background color background-color is used to set the background:
+	background-color: lightblue;
+
+	
+15. CSS property to change text color color property changes text color:
+	color: red;
+
+
+16. CSS property to control text size font-size defines text size:
+	font-size: 16px;
+
+17.Correct CSS syntax for making elements bold
+	font-weight: bold;
+
+18.Types of element positioning in CSS
+	static (default)
+	relative
+	absolute
+	fixed
+	sticky
+
+19.Property that controls background image scrolling behaviour
+	background-attachment determines if a background image scrolls:
+	background-attachment: fixed;
+
+20.How to handle content overflow? The overflow property manages overflowing content:
+	overflow: hidden; /* Hide overflowing content */
+	overflow: scroll; /* Add scrollbar */
+	overflow: auto; /* Scroll when needed */
+
+21.What is padding? 
+	Padding is the space inside an element, between its content and border:
+	padding: 10px;
+
+22.Property to change the left margin of an element
+	margin-left: 20px;
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+										                JAVA SCRIPT
+
+
+
+1.JavaScript is developed by Netscape Communications (originally created by Brendan Eich in 1995).
+
+2.JavaScript is a typed language? No, JavaScript is a dynamically typed language, meaning variables do not require explicit type definitions.
+
+3.Are Java and JavaScript the same? No, Java and JavaScript are completely different languages with distinct purposes, syntaxes, and execution environments.
+
+4.Which attribute of the form tag is not set using the document object in JavaScript? The action attribute cannot be directly modified using the document object.
+
+5.What property would you use to redirect a visitor to another page? The window.location property is used for redirection in JavaScript (e.g., window.location.href = "https://example.com";).
+
+6.What looping structures are available in JavaScript? JavaScript supports several loops: for, while, do-while, and forEach (for arrays).
+
+7.What is the meaning of the "this" keyword in JavaScript? The this keyword refers to the object that is currently executing the function, and its value depends on the context in which it is called.
+
+8.Choose the client-side JavaScript object: This part of the question seems incomplete, but common client-side JavaScript objects include window, document, navigator, history, and localStorage.
+
+9.What is JavaScript? JavaScript is a scripting language primarily used to create dynamic and interactive web content. It enables functionalities like animations, form validations, and event handling.
+
+10.Who is the founder of JavaScript? JavaScript was created by Brendan Eich in 1995 while working at Netscape Communications.
+
+11.What was the first name of JavaScript? Initially, JavaScript was named LiveScript, but it was later renamed to JavaScript to capitalize on Java’s popularity.
+
+12.Describe JavaScript versions: JavaScript has evolved through various versions. Key updates include:
+
+	ES5 (2009): Introduced strict mode and JSON support.
+
+	ES6 (2015): Added arrow functions, let & const, template literals, classes, and promises.
+
+	ES7, ES8, ES9, etc.: Continued to add features like async/await, object spread/rest operators, and more.
+
+13.How to apply JavaScript in a webpage? You can use JavaScript in a webpage by including it within the <script> tag inside the HTML document. Example:
+	<script>
+    		alert("Hello, World!");
+	</script>
+
+14.What is Vanilla JS? Vanilla JS refers to plain JavaScript, meaning JavaScript without any libraries or frameworks like React or jQuery.
+
+15.JavaScript is which type of language? JavaScript is a dynamically typed and interpreted programming language.
+
+16.How many types of JavaScript comments? JavaScript supports two types of comments:
+	Single-line comment: // This is a comment
+	Multi-line comment:
+		/* This is a 
+   		multi-line comment */
+
+17.How to apply JavaScript comments? Use // for single-line comments and /* */ for multi-line comments.
+
+18.What is a variable? How to create it? A variable is a container for storing data. You can declare a variable using:
+	var name = "John";
+	let age = 25;
+	const pi = 3.14;
+
+19.What is the difference between global and block-level variables?
+	Global variables are accessible throughout the program.
+	Block-level variables (let & const) are restricted to a block {}.
+
+20.What is datatype? List out its types: Datatypes classify data stored in variables. JavaScript has:
+	String
+	Number
+	Boolean
+	Undefined
+	Null
+	Object
+	Symbol
+
+21.List operator types: Operators in JavaScript include:
+	Arithmetic: +, -, *, /, %
+	Comparison: ==, ===, !=, <, >
+	Logical: &&, ||, !
+	Assignment: =, +=, -=
+	Bitwise: &, |, ^, ~
+	Ternary: condition ? value1 : value2
+
+22.List conditional statements or decision-making:
+	if
+	else if
+	else
+	switch
+
+23.When do we use if condition? We use if statements when we need to execute a block of code only if a condition is true.
+
+24.What do we use the switch statement for? The switch statement is used when multiple conditions need to be evaluated, making code more readable than multiple if-else statements. Example:
+	let day = "Monday";
+		switch (day) {
+  	case "Monday":
+    		console.log("Start of the week!");
+    	break;
+  	case "Friday":
+    	console.log("Weekend is near!");
+    	break;
+  	default:
+    		console.log("It's just another day.");
+	}
+
+25.What is a loop? A loop is a programming structure that repeats a block of code until a specified condition is met.
+
+26.List types of loops in JavaScript:
+	for loop
+	while loop
+	do-while loop
+	forEach loop (used with arrays)
+
+27.What is a function? A function is a reusable block of code designed to perform a specific task. Example:
+	function greet(name) {
+  		return "Hello, " + name;
+	}
+		console.log(greet("Alice")); // Output: Hello, Alice
+
+28.What is an object? How many ways to create an object? An object in JavaScript is a collection of key-value pairs. It can be created in multiple ways:
+	Object literal: { name: "John", age: 30 }
+	Constructor function: new Object()
+	Class-based: class Person { constructor(name) { this.name = name; } }
+	Using Object.create(): let obj = Object.create(protoObject);
+
+29.What is an array? How many ways to create an array? An array is a collection of values stored in an ordered sequence. Ways to create an array:
+	Using []: let arr = [1, 2, 3];
+	Using new Array(): let arr = new Array(1, 2, 3);
+
+30.How to create a digital clock on a webpage? JavaScript's setInterval() function can be used to update the time dynamically:
+	function updateClock() {
+  		let now = new Date();
+  	document.getElementById("clock").innerText = now.toLocaleTimeString();
+	}
+	setInterval(updateClock, 1000);
+
+31.How to use the Date function in JavaScript? The Date object provides methods to work with dates and times:
+	let now = new Date();
+	console.log(now.toDateString()); // Displays the current date
+	console.log(now.getFullYear()); // Gets the year
+
+32.How to use Math methods? The Math object provides mathematical functions:
+	console.log(Math.round(4.7));  // Rounds to nearest integer
+	console.log(Math.random());    // Generates a random number
+	console.log(Math.sqrt(25));    // Returns square root
+
+33.What is Boolean? Boolean is a data type that represents true or false.
+
+34.List out JavaScript selectors:
+	getElementById()
+	getElementsByClassName()
+	getElementsByTagName()
+	querySelector()
+	querySelectorAll()
+
+35.How to use getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll()?
+	document.getElementById("myElement");       // Selects an element by ID
+	document.getElementsByClassName("myClass"); // Selects elements by class name
+	document.getElementsByTagName("p");         // Selects all <p> elements
+	document.querySelector(".myClass");         // Selects the first matching element
+	document.querySelectorAll("div");           // Selects all <div> elements
+
+36.What is the difference between innerHTML and innerText?
+	innerHTML gets or sets HTML content.
+	innerText retrieves only the text inside an element.
+
+37.What is RegEx? RegEx (Regular Expression) is a pattern used for text matching and manipulation.
+
+38.Why do we use RegEx?
+    Validating input
+    Searching within text
+    Formatting strings
+
+39.List out window objects:
+	window.alert()
+	window.confirm()
+	window.prompt()
+	window.location
+	window.history
+	window.navigator
+
+40.List out history objects:
+	history.back()
+	history.forward()
+	history.go()
+
+41.How many types of popup boxes/dialog boxes?
+	alert()
+	confirm()
+	prompt()
+
+42.How many built-in methods are available in the Date object? Common methods include:
+	getFullYear(), getMonth(), getDate(), getHours(), getMinutes(), getSeconds().
+	Formatting options: toDateString(), toLocaleString()
+
+43.What is an event? An event is an interaction triggered by the user (e.g., clicks, keystrokes, mouse movements).
+
+44.What is an event handler? A function that executes when an event occurs.
+
+45.What is event handling? The process of managing and responding to user events in JavaScript.
+
+46.How many types of events?
+	Mouse events (click, hover)
+	Keyboard events (keypress, keydown)
+	Form events (submit, change)
+	Window events (load, resize)
+
+47.What is the difference between onload and onunload events?
+	onload: Executes when the page loads.
+	onunload: Executes when the user leaves the page.
+
+48.What is the difference between onblur, onchange, and onfocus events?
+	onblur: Fires when an element loses focus.
+	onchange: Fires when the value of an input field changes and loses focus.
+	onfocus: Fires when an element gains focus.
+
+49.What is the difference between keypress and keydown events?
+	keypress: Detects when a key is pressed, but it is now deprecated.
+	keydown: Fires when any key is pressed, including non-character keys like Shift.
+
+50.What is the difference between setTimeout() and setInterval()?
+	setTimeout(): Runs a function once after a delay.
+	setInterval(): Runs a function repeatedly at defined intervals.
+
+51.How to stop setInterval()? Use clearInterval(intervalID) to stop the interval:
+	let interval = setInterval(() => console.log("Running"), 1000);
+	clearInterval(interval);
+
+52.What is a cookie? How to create it? A cookie is a small piece of data stored in a user's browser. To create a cookie:
+	document.cookie = "username=John; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+
+53.How to set CSS dynamically on a webpage? Use JavaScript to modify styles:
+	document.getElementById("myElement").style.color = "red";
+
+54.What is classList and className property?
+	classList: Provides methods like add(), remove(), toggle() for handling classes.
+	className: Sets or returns the complete class name as a string.
+
+55.How to add CSS or structure on a webpage? Use classList.add() or modify styles directly:
+	document.getElementById("myElement").classList.add("newClass");
+
+56.How to remove CSS or structure on a webpage? Use classList.remove():
+	document.getElementById("myElement").classList.remove("oldClass");
+
+57.How is the contains() method used? Checks if an element has a specific class: 
+	document.getElementById("myElement").classList.contains("active");
+
+58.What is an arrow function? When was it introduced? Arrow functions (=>) offer a concise way to write functions. Introduced in ES6 (2015):
+	const greet = (name) => `Hello, ${name}`;
+
+59.Explain addEventListener() and removeEventListener() methods.
+	addEventListener(): Adds an event handler without overwriting existing ones.
+	removeEventListener(): Removes a previously attached event handler.
+	let btn = document.getElementById("myButton");
+	const handler = () => console.log("Clicked!");
+	btn.addEventListener("click", handler);
+	btn.removeEventListener("click", handler);
+
+60.How to add structure dynamically in HTML? Use innerHTML or createElement():
+	let div = document.createElement("div");
+	div.innerHTML = "<h2>Hello</h2>";
+	document.body.appendChild(div);
+    
+61.Describe arithmetic operators. Arithmetic operators perform mathematical calculations:
+	Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%).
+
+62.What is the increment and decrement operator?
+	Increment (++): Increases a value by 1.
+	Decrement (--): Decreases a value by 1.
+
+63.How many types of increment and decrement operators? Two types:
+	Pre (++x, --x): Changes value immediately.
+	Post (x++, x--): Changes value after execution.
+
+64.What is the ternary operator? A shorthand for if-else:
+	let age = 18;
+	let message = age >= 18 ? "Adult" : "Minor";
+	console.log(message);
+
+65.What is DOM and BOM?
+	DOM (Document Object Model): Represents HTML elements in JavaScript.
+	BOM (Browser Object Model): Includes browser-related objects (window, history, navigator).
+
+
+
+
+
+-----------------------------------------------------------------------ADVANCE JS------------------------------------------------------------------------------------------------
+
+
+
+
+1.Destructuring of Objects and Arrays:- Destructuring allows you to unpack values from objects or arrays into separate variables in a clean way.
+	const person = { name: "Alice", age: 25 };
+	const { name, age } = person; // Extracts `name` and `age` into variables
+
+	Similarly, with arrays:
+
+	const numbers = [10, 20, 30];
+	const [first, second] = numbers; // first = 10, second = 20
+	
+2.Inheritance:- Inheritance is a mechanism where one class (child) derives properties and methods from another class (parent). In JavaScript, this is commonly implemented using extends.
+	class Animal {
+  		speak() { console.log("Animal speaks"); }
+	}
+	class Dog extends Animal {
+  		bark() { console.log("Woof!"); }
+	}
+	const myDog = new Dog();
+	myDog.speak(); // Inherits from Animal
+	myDog.bark(); // Defined in Dog
+
+3.Class & Its Use:- A class in JavaScript is a blueprint for creating objects. It helps structure code and improve reusability.
+	class Car {
+  		constructor(brand) { this.brand = brand; }
+  		getBrand() { return this.brand; }
+	}
+	const myCar = new Car("Toyota");
+	console.log(myCar.getBrand()); // "Toyota"
+
+4.Constructor:- A special method inside a class that initializes properties when an object is created.
+	class Person {
+  		constructor(name) { this.name = name; }
+	}
+	const user = new Person("John");
+	console.log(user.name); // "John"
+
+5.Higher Order Functions:- Functions that take another function as an argument or return a function.
+	function greet(callback) {
+  		console.log("Hello!");
+  		callback();
+	}
+	greet(() => console.log("How are you?"));
+
+6.LocalStorage & Its Methods:- LocalStorage stores data in a web browser persistently. Methods include setItem(), getItem(), removeItem(), and clear().
+	localStorage.setItem("username", "Alice");
+	console.log(localStorage.getItem("username")); // Alice
+
+7.Promises:- Promises handle asynchronous operations. They have three states: pending, resolved, or rejected.
+	let promise = new Promise((resolve, reject) => {
+  		setTimeout(() => resolve("Success"), 1000);
+	});
+	promise.then(value => console.log(value)); // "Success"
+
+8.Async & Await:- These simplify working with promises by making asynchronous code look synchronous.
+	async function fetchData() {
+  		let data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  		let json = await data.json();
+  	console.log(json);
+	}
+
+9.Prototype & Its Role:- Prototypes allow objects to inherit properties from other objects.
+	function Person(name) { this.name = name; }
+	Person.prototype.sayHello = function () { console.log("Hello, " + this.name); };
+	const user1 = new Person("Alice");
+	user1.sayHello(); // "Hello, Alice"
+	Closure & Callback Function
+
+10.Closures retain access to their outer scope even after the function has executed.
+	function outer() {
+  		let count = 0;
+  		return function inner() { count++; console.log(count); };
+	}
+	let counter = outer();
+	counter(); // 1
+	counter(); // 2
+	Callback functions are passed as arguments to other functions.
+	function greet(callback) {
+  		console.log("Hello!");
+  		callback();
+	}
+	greet(() => console.log("How are you?"));
+
+11.Try...Catch Block Used to handle errors gracefully.
+	try {
+  		let x = y; // y is undefined
+	} catch (error) {
+  	console.log("An error occurred:", error.message);
+	}
+
+12.Types of Errors
+	SyntaxError
+	ReferenceError
+	TypeError
+	RangeError
+	URIError
+	EvalError (rarely used)
+
+
+
+
+
+
+------------------------------------------------------------------------JQUERY---------------------------------------------------------------------------------------------------
+
+
+
+
+1.Single Global Function in jQuery The global function in jQuery is $(), which is an alias for jQuery(). It is used to select elements, create elements, and interact with the DOM.
+	$(document).ready(function() {
+  	console.log("DOM is ready!");
+	});
+
+2.Factory Function in jQuery A factory function in jQuery is the $() function itself because it creates and returns a new jQuery object without requiring new.
+	var myElement = $("div"); // Creates a jQuery object for <div>
+
+3.Utility Function in jQuery Utility functions in jQuery help with operations like type checking, array manipulation, and extending objects. Examples include:
+	$.isArray()
+	$.trim()
+	$.extend()
+	var trimmedString = $.trim("  Hello World  ");
+	console.log(trimmedString); // "Hello World"
+
+4.Heavily Overloaded Function in jQuery The $.ajax() function is heavily overloaded, meaning it can accept various types of inputs and configurations to handle AJAX requests.
+	$.ajax({
+  	url: "data.json",
+  	method: "GET",
+  	success: function(response) {
+    	console.log(response);
+  	}
+	});
+
+5.Method That Operates on the Return Value of $() Many jQuery methods operate on the return value of $(), such as .css(), .hide(), .show(), .attr(), .html(), etc.
+	$("p").hide(); // Hides all <p> elements
+
+6.What Does "min" Mean in jquery-1.4.2.min.js? The .min.js version of a JavaScript file indicates that it is minified. Minification removes unnecessary spaces, comments, and shortens variable names to improve loading speed.
+
+7.Another Utility Function in jQuery Besides the ones mentioned earlier, $.each() is another useful utility function for iterating over elements or objects.
+	$.each([1, 2, 3], function(index, value) {
+  		console.log(index + ": " + value);
+	});
+
+8.Libraries that Build Higher-Level APIs for Client-Side Programming Some popular libraries include:
+	React (for UI components)
+	Vue.js (for reactive programming)
+	Angular (for complete front-end architecture)
+
+9.Frameworks that Focus on DOM and AJAX Utilities jQuery itself is one such framework. Another example is Zepto.js, which is a lightweight alternative to jQuery focusing on DOM manipulation and AJAX.
+
+10.Responsive Design Responsive design is an approach where web pages automatically adapt to different screen sizes and devices using CSS media queries and flexible layouts.
+	@media (max-width: 600px) {
+  		body { font-size: 14px; }
+	}
+
+
+
+
+
+
+
+
+
+
+
+HTML & CSS
+Responsive Design: A webpage is made responsive using CSS media queries, flexbox, grid, and a mobile-first approach to ensure it works well on different screen sizes.
+
+css
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+}
+CSS Units (em, rem, %, px)
+
+px: Absolute unit, doesn't change with screen size.
+
+em: Relative to the parent element's font size.
+
+rem: Relative to the root element (html) font size.
+
+%: Relative to the parent element size.
+
+CSS Box Model: Defines how elements are spaced in a layout—includes margin, border, padding, and content.
+
+Webpage Optimization for Faster Loading:
+
+Minify CSS & JS
+
+Lazy loading images
+
+Reduce HTTP requests
+
+Use caching techniques
+
+Media Queries: Allow designs to adapt based on screen size using conditions like max-width or min-width.
+
+JavaScript Concepts
+Difference Between let, const, and var:
+
+var: Function-scoped, can be re-declared.
+
+let: Block-scoped, can be updated but not re-declared.
+
+const: Block-scoped, can't be updated or re-declared.
+
+Event Delegation: Instead of adding individual event listeners to multiple elements, you attach it to their parent element for better performance.
+
+Closures: Functions that remember the variables from their outer function even after execution.
+
+js
+function outer() {
+  let count = 0;
+  return function inner() { count++; console.log(count); };
+}
+let counter = outer();
+counter(); // 1
+counter(); // 2
+async and await: Simplifies promise handling, making async code look synchronous.
+
+js
+async function fetchData() {
+  let data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  let json = await data.json();
+  console.log(json);
+}
+== vs ===:
+
+== compares values but ignores types.
+
+=== checks both value and type.
+
+js
+console.log(1 == "1"); // true
+console.log(1 === "1"); // false
+React & Frameworks
+Virtual DOM in React: A lightweight copy of the real DOM that React updates efficiently to improve performance.
+
+Functional vs Class Components:
+
+Functional Components: Simple, use hooks, better for stateless components.
+
+Class Components: Use lifecycle methods and maintain their own state.
+
+State Management in React: Controlled using useState, useReducer, Context API, or libraries like Redux.
+
+React Hooks: Functions like useState, useEffect, useContext that simplify component logic.
+
+Controlled vs Uncontrolled Components:
+
+Controlled: React controls input values via state.
+
+Uncontrolled: Input elements manage their own state.
+
+Performance & Debugging
+Debugging JavaScript Errors: Use DevTools, console.log(), breakpoints, and error-handling methods like try...catch.
+
+Ways to Improve Website Performance:
+
+Minify CSS/JS
+
+Use lazy loading
+
+Optimize images
+
+Reduce unnecessary re-renders
+
+Handling API Errors: Implement try...catch for better error handling in async functions.
+
+Lazy Loading: Loads content only when needed, improving initial page load speed.
+
+Preventing Memory Leaks in JavaScript: Avoid unnecessary event listeners, use weak references, and clean up variables when no longer needed.
+
+
+
+
+
+-------------------------------------------------------------REACT--------------------------------------------------------
+
+
+1. What is React?
+React is an open-source JavaScript library for building user interfaces (UI), mainly for single-page applications (SPA). It enables developers to build UI components that efficiently update and render dynamically.
+
+2. What is SPA (Single Page Application)?
+SPA is a web application that loads a single HTML page and dynamically updates the content without reloading the entire page. React is commonly used to build SPAs for better user experience and speed.
+
+3. How many JavaScript libraries support SPA?
+Several JavaScript libraries and frameworks support SPA development, including:
+
+React.js
+
+Angular.js
+
+Vue.js
+
+Next.js
+
+Svelte
+
+4. Who’s the founder of React.js??
+React.js was developed by Jordan Walke, a software engineer at Facebook, in 2011. Facebook later open-sourced React in 2013.
+
+5. Why do we use React.js??
+React is used because:
+
+It provides fast rendering via the Virtual DOM.
+
+It follows a component-based architecture.
+
+It supports one-way data binding for better control.
+
+React applications are easier to maintain than traditional apps.
+
+6. Benefits of React.js
+✅ Reusable Components → Faster development ✅ Virtual DOM → Optimized rendering ✅ SEO-Friendly → Improves performance ✅ Strong Community Support → Open-source and actively maintained ✅ Easy Integration → Works with other frameworks
+
+7. How to install React using npm?
+Run the following command to install React and create a new project:
+
+sh
+npx create-react-app my-app
+or using npm:
+
+sh
+npm install react react-dom
+Then navigate to the project folder:
+
+sh
+cd my-app
+npm start
+
+8. What is Vite?
+Vite is a next-generation build tool for frontend applications that offers fast hot module replacement (HMR) and instant server startup. It is an alternative to Webpack for React and Vue projects.
+
+9. What is routing? Why do we use it?
+Routing in React is managed using React Router, which allows navigation without refreshing the page. Example:
+
+jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+10. What are components?
+A component is a reusable, independent piece of UI in React that can be a function or a class.
+
+11. How many types of components?
+There are two main types:
+
+Class Components → Uses this.state, lifecycle methods
+
+Functional Components → Uses hooks like useState, useEffect
+
+12. What is props?
+Props (short for "properties") are used to pass data between components.
+
+13. Why are props used?
+Props allow data sharing between components, making components more dynamic and reusable.
+
+14. What do map() and filter() methods do?
+map() → Iterates over an array and modifies each item.
+
+js
+const numbers = [1, 2, 3];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6]
+
+filter() → Filters elements based on a condition.
+
+js
+const numbers = [10, 20, 30, 40];
+const filtered = numbers.filter(num => num > 20);
+console.log(filtered); // [30, 40]
+
+15. What is state?
+State is a built-in object in React that holds dynamic data inside a component.
+
+16. Difference Between Props and State
+Props → Passed from parent component, immutable.
+
+State → Managed within the component, mutable.
+
+17. Why do we use functional components?
+Functional components: ✅ Are simpler and easier to test ✅ Use React Hooks instead of lifecycle methods ✅ Improve performance with React.memo
+
+18. Describe setState() method
+setState() updates state and triggers re-rendering:
+
+jsx
+this.setState({ count: this.state.count + 1 });
+
+19. What is an expression?
+An expression in React is any valid JavaScript code within JSX:
+
+jsx
+const name = "John";
+return <h1>Hello, {name}!</h1>;
+20. How many ways to apply CSS in React?
+✅ Inline CSS ✅ External CSS Files (App.css) ✅ Styled Components ✅ CSS Modules ✅ Tailwind CSS / Bootstrap
+
+--------
+
+1. What is Client-Server Architecture?
+Client-Server Architecture is a computing model where the client (frontend) requests data, and the server (backend) processes and returns the response.
+
+Client: Web browser, mobile app, etc.
+
+Server: Database, backend logic, API. Example: When a user submits a login form, the client sends a request to the server, which verifies credentials and sends back the response.
+
+2. What is Frontend Development?
+Frontend development focuses on creating the user interface (UI) of a web application. It includes technologies like: ✅ HTML → Defines structure ✅ CSS → Styles elements ✅ JavaScript → Adds interactivity ✅ Frameworks/Libraries → React, Angular, Vue
+
+3. What is HTTP Protocol?
+HTTP (HyperText Transfer Protocol) is the protocol used for communication between web browsers and servers.
+
+It operates over TCP/IP.
+
+Uses request methods like GET, POST, PUT, DELETE. Example:
+
+sh
+GET /home HTTP/1.1
+Host: example.com
+4. Difference Between Real DOM & Virtual DOM
+Feature	Real DOM	Virtual DOM
+Updates	Slow	Fast
+Manipulation	Direct	Indirect
+Performance	Lower	Higher
+Real DOM: Direct manipulation causes slow performance.
+
+Virtual DOM: React creates a lightweight copy, compares changes, and updates only necessary parts.
+
+5. What is React?
+React is a JavaScript library used for building interactive UIs and single-page applications (SPA). It uses components and virtual DOM for efficient rendering.
+
+6. Features of React
+✅ Component-Based Architecture ✅ Virtual DOM for Fast Updates ✅ Reusable UI Components ✅ One-Way Data Binding ✅ Hooks for Functional Components
+
+7. Advantages of React
+✅ Fast Rendering with Virtual DOM ✅ Reusable Components → Better maintainability ✅ Strong Community Support ✅ Efficient State Management with Hooks & Redux
+
+8. Limitations of React
+❌ Learning Curve for Beginners ❌ SEO Limitations (Requires SSR for better optimization) ❌ Frequent Updates → Requires keeping up with changes
+
+9. What is JSX?
+JSX (JavaScript XML) is a syntax extension for React that allows writing HTML-like code inside JavaScript. Example:
+
+jsx
+const element = <h1>Hello, World!</h1>;
+JSX makes components more readable and efficient.
+
+10. What is Virtual DOM? Explain its working.
+Virtual DOM is a lightweight JavaScript representation of the actual DOM in React. Instead of directly modifying the Real DOM, React first updates the Virtual DOM, compares differences (diffing), and then updates only necessary parts of the Real DOM. Working Process:
+
+React creates a Virtual DOM copy of the UI.
+
+When a state or prop changes, React compares the Virtual DOM with the previous version (Diffing Algorithm).
+
+React applies minimum changes to the Real DOM for better performance.
+
+11. Why can’t browsers read JSX?
+Browsers cannot read JSX because it's not pure JavaScript—it’s a syntax extension that needs to be transformed into JavaScript using tools like Babel. Example before JSX compilation:
+
+jsx
+const element = <h1>Hello, World!</h1>;
+After Babel compiles JSX into JavaScript:
+
+js
+const element = React.createElement("h1", null, "Hello, World!");
+Thus, browsers understand this compiled JavaScript.
+
+12. How is React’s ES6 syntax different from ES5?
+React ES6 syntax improves readability and reduces complexity compared to ES5.
+
+Feature	ES5 Syntax	ES6 Syntax
+Component	React.createClass()	class Component extends React.Component
+Variables	var	let / const
+Function	function() {}	() => {} (Arrow function)
+Import	require()	import
+Example: ES5 Class Component:
+
+js
+var MyComponent = React.createClass({
+  render: function() {
+    return <h1>Hello</h1>;
+  }
+});
+ES6 Class Component:
+
+jsx
+class MyComponent extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+13. How is React different from Angular?
+Feature	React	Angular
+Type	Library	Framework
+Data Binding	One-way	Two-way
+Performance	Faster (Virtual DOM)	Slower (Real DOM)
+Learning Curve	Easier	Harder
+Flexibility	High (Can use other libraries)	Strict structure
+React is lightweight and flexible, while Angular is more structured and feature-rich.
+
+14. Difference Between Element and Component
+Element → Basic React unit (React.createElement()).
+
+Component → A reusable function/class returning JSX.
+
+Example:
+
+jsx
+const element = <h1>Hello</h1>; // React Element
+function MyComponent() {
+  return <h1>Hello</h1>; // React Component
+}
+15. How to create components in React?
+There are two types of components: ✅ Functional Component
+
+jsx
+function MyComponent() {
+  return <h1>Hello</h1>;
+}
+✅ Class Component
+
+jsx
+class MyComponent extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+16. When to use a Class Component over a Function Component?
+Use Class Components when: ✔ You need Lifecycle Methods (componentDidMount, componentDidUpdate). ✔ You require local state management (this.state).
+
+Otherwise, use Functional Components with Hooks.
+
+17. What are Pure Components?
+A Pure Component automatically prevents unnecessary re-renders. Example:
+
+jsx
+import React, { PureComponent } from "react";
+
+class MyComponent extends PureComponent {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+Pure Components only re-render when there is a state or prop change.
+
+18. What is State in React?
+State is a built-in object to store component data that changes dynamically. Example:
+
+jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
+}
+19. What are Props in React?
+Props (short for "properties") are data passed from parent to child. Example:
+
+jsx
+function Child({ message }) {
+  return <h1>{message}</h1>;
+}
+
+function Parent() {
+  return <Child message="Hello from Parent!" />;
+}
+20. Difference Between State and Props?
+Feature	State	Props
+Mutability	Mutable	Immutable
+Managed By	Component itself	Parent Component
+Purpose	Component data	Pass data to child
+State changes inside the component, whereas Props come from the parent.
+
+21. Why should we not update the state directly?
+Updating state directly (this.state.value = "new") does not trigger re-rendering. Instead, always use setState():
+
+jsx
+this.setState({ value: "new" });
+This ensures React detects the change and re-renders correctly.
+
+22. Purpose of Callback Function in setState()?
+The callback function ensures state updates happen synchronously. Example:
+
+jsx
+this.setState({ count: this.state.count + 1 }, () => {
+  console.log("Updated count:", this.state.count);
+});
+Without the callback, React may delay updates.
+
+23. Difference Between HTML and React Event Handling?
+Feature	HTML Event Handling	React Event Handling
+Syntax	onclick="myFunction()"	onClick={myFunction}
+Case Sensitivity	Lowercase (onclick)	CamelCase (onClick)
+Prevent Default	event.preventDefault()	Explicit in event handler
+Example: HTML:
+
+html
+<button onclick="myFunction()">Click Me</button>
+React:
+
+jsx
+<button onClick={myFunction}>Click Me</button>
+24. How to Bind Methods in JSX Callbacks?
+Use .bind(this) inside the constructor or arrow functions: ✅ Using .bind() in Class Component
+
+jsx
+class MyComponent extends React.Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    console.log("Button Clicked!");
+  }
+  render() {
+    return <button onClick={this.handleClick}>Click Me</button>;
+  }
+}
+✅ Using Arrow Function (Modern Approach)
+
+jsx
+class MyComponent extends React.Component {
+  handleClick = () => {
+    console.log("Button Clicked!");
+  };
+  render() {
+    return <button onClick={this.handleClick}>Click Me</button>;
+  }
+}
+
+25. How to pass a parameter to an event handler or callback?
+You can pass parameters in two ways: ✅ Using Arrow Function:
+
+jsx
+<button onClick={() => handleClick("Hello")}>Click Me</button>
+✅ Using .bind() Method:
+
+jsx
+<button onClick={handleClick.bind(this, "Hello")}>Click Me</button>
+These ensure the event handler receives custom parameters.
+
+26. What are Synthetic Events in React?
+Synthetic Events standardize event handling across browsers, providing a consistent API. Example:
+
+jsx
+function handleClick(event) {
+  console.log(event.target); // Consistent behavior
+}
+<button onClick={handleClick}>Click Me</button>
+React wraps native events with Synthetic Events for performance optimization.
+
+27. What are Inline Conditional Expressions?
+Inline conditional expressions allow rendering logic inside JSX using ternary operators or && (short-circuit evaluation). Example:
+
+jsx
+{isLoggedIn ? <p>Welcome!</p> : <p>Please log in.</p>}
+or
+
+jsx
+{isAdmin && <p>Admin Panel</p>}
+They prevent unnecessary renders efficiently.
+
+28. What are "key" props and what is their benefit in arrays of elements?
+The key prop helps React identify unique elements in a list, improving performance. Example:
+
+jsx
+const users = ["Alice", "Bob", "Charlie"];
+users.map((user, index) => <p key={index}>{user}</p>);
+Without key, React re-renders entire lists inefficiently.
+
+29. What is the use of Refs?
+Refs (references) allow direct DOM manipulation without causing re-renders. Example:
+
+jsx
+const myRef = useRef();
+function handleClick() {
+  myRef.current.focus();
+}
+<input ref={myRef} />
+30. How to create Refs?
+Refs can be created using: ✅ useRef() in Functional Components:
+
+jsx
+const myRef = useRef();
+✅ React.createRef() in Class Components:
+
+jsx
+this.myRef = React.createRef();
+31. What are Forward Refs?
+Forward Refs allow parent components to pass refs to child components. Example:
+
+jsx
+const MyInput = React.forwardRef((props, ref) => <input ref={ref} />);
+const inputRef = useRef();
+<MyInput ref={inputRef} />;
+Now, inputRef gives direct access to <input>.
+
+32. Which is preferred: Callback Refs or findDOMNode()?
+✔ Callback Refs (ref={el => this.input = el}) are preferred because findDOMNode() is deprecated and unsafe in React Strict Mode.
+
+33. Why are String Refs Legacy?
+String refs (ref="myRef") are deprecated because: ❌ Harder to access dynamically ❌ Less compatible with React updates ❌ Not recommended for StrictMode
+
+Instead, use callback refs or useRef().
+
+34. What is React Fiber?
+React Fiber is React’s new reconciliation algorithm, improving UI rendering speed and responsiveness.
+
+35. What is the main goal of React Fiber?
+🚀 Improve UI responsiveness 🚀 Enable concurrent rendering 🚀 Optimize animations and transitions
+
+Fiber prioritizes rendering tasks, reducing UI lags.
+
+36. What are Controlled Components?
+Controlled Components fully manage form inputs via React state. Example:
+
+jsx
+function MyComponent() {
+  const [name, setName] = useState("");
+
+  return <input value={name} onChange={(e) => setName(e.target.value)} />;
+}
+React controls the input’s behavior.
+
+37. What are Uncontrolled Components?
+Uncontrolled Components manage their own state using refs instead of React state. Example:
+
+jsx
+const myRef = useRef();
+
+function handleSubmit() {
+  alert(myRef.current.value);
+}
+
+return <input ref={myRef} />;
+React does not track input changes directly.
+
+38. Difference Between createElement and cloneElement?
+✔ createElement() creates new elements:
+
+jsx
+React.createElement("h1", { className: "title" }, "Hello");
+✔ cloneElement() clones and modifies existing elements:
+
+jsx
+const newElement = React.cloneElement(oldElement, { className: "new-title" });
+Useful for modifying elements without re-rendering.
+
+39. What is Lifting State Up in React?
+Lifting state up moves state from child to parent for better data sharing. Example:
+
+jsx
+function Parent() {
+  const [count, setCount] = useState(0);
+
+  return <Child count={count} onIncrement={() => setCount(count + 1)} />;
+}
+
+function Child({ count, onIncrement }) {
+  return <button onClick={onIncrement}>Count: {count}</button>;
+}
+Parent manages state instead of each child, ensuring better control.
+
+40. What are the different phases of the component lifecycle?
+React components go through three lifecycle phases: 1️⃣ Mounting – When a component is created and inserted into the DOM. 2️⃣ Updating – When a component's state or props change. 3️⃣ Unmounting – When a component is removed from the DOM.
+
+41. What are the lifecycle methods of React?
+React lifecycle methods allow you to run code at specific points during a component's existence. ✔ Mounting Methods: constructor(), render(), componentDidMount() ✔ Updating Methods: shouldComponentUpdate(), componentDidUpdate() ✔ Unmounting Method: componentWillUnmount() ✔ Error Handling Methods: componentDidCatch(), getDerivedStateFromError()
+
+42. What are Higher-Order Components (HOC)?
+A Higher-Order Component (HOC) is a function that takes a component as an argument and returns a new component with additional functionality. Example:
+
+jsx
+function withLogger(Component) {
+  return function WrappedComponent(props) {
+    console.log("Rendering Component...");
+    return <Component {...props} />;
+  };
+}
+43. How to create a props proxy for HOC components?
+A props proxy is used in HOCs to manipulate props before passing them to the wrapped component. Example:
+
+jsx
+function withExtraProps(Component) {
+  return function EnhancedComponent(props) {
+    return <Component {...props} newProp="Added value" />;
+  };
+}
+44. What is context?
+React Context provides global state management for sharing data across multiple components without prop drilling. Example:
+
+jsx
+const ThemeContext = React.createContext("light");
+
+function ThemeProvider({ children }) {
+  return <ThemeContext.Provider value="dark">{children}</ThemeContext.Provider>;
+}
+45. What is a child's prop?
+A child’s prop refers to data passed from a parent component to a child component via props. Example:
+
+jsx
+function Child({ message }) {
+  return <p>{message}</p>;
+}
+function Parent() {
+  return <Child message="Hello from Parent!" />;
+}
+46. How to write comments in React?
+✔ JSX Comments: {/* This is a JSX comment */} ✔ JavaScript Comments: // This is a JS comment or /* Multi-line comment */
+
+47. Purpose of using super() with props in a constructor?
+In class components, super(props) ensures the parent class (React.Component) initializes props correctly. Example:
+
+jsx
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log(props);
+  }
+}
+48. What is reconciliation?
+Reconciliation is React’s process of efficiently updating the DOM using its Virtual DOM and Diffing Algorithm. It ensures minimum changes are made to the real DOM.
+
+49. How to set state with a dynamic key name?
+Use computed property names inside setState(). Example:
+
+jsx
+this.setState({ [keyName]: value });
+50. Common mistake when a function is called every render?
+🚨 Incorrect:
+
+jsx
+<button onClick={handleClick()}>Click</button> // Function is called on render!
+✅ Fix: Use a reference instead of calling the function:
+
+jsx
+<button onClick={handleClick}>Click</button>
+51. Does lazy function support named exports?
+No, React.lazy() only supports default exports. 🚨 Wrong:
+
+jsx
+export function MyComponent() {} // Can't be lazy-loaded
+✅ Correct:
+
+jsx
+export default function MyComponent() {} // Lazy load works
+52. Why does React use className instead of class?
+⚡ JavaScript uses class as a reserved keyword, so React uses className to avoid conflicts. Example:
+
+jsx
+<p className="title">React is awesome!</p>
+53. What are Fragments?
+Fragments <></> let you group multiple elements without adding an extra <div>. Example:
+
+jsx
+<>
+  <h1>Hello</h1>
+  <p>Welcome!</p>
+</>
+54. Why are fragments better than container <div>?
+✔ Prevents unnecessary DOM nesting ✔ Improves performance ✔ Avoids layout issues (e.g., unwanted margins)
+
+55. What are portals in React?
+Portals allow rendering a component outside its parent DOM hierarchy. Example:
+
+jsx
+ReactDOM.createPortal(<Modal />, document.getElementById("modal-root"));
+Useful for modals and overlays.
+
+56. What are stateless components?
+Stateless components do not manage local state and simply return JSX. Example:
+
+jsx
+function Welcome() {
+  return <h1>Hello!</h1>;
+}
+Instead, use state with hooks (useState, useEffect) in functional components.
+
+57. What are stateful components?
+Stateful components maintain their own state and react dynamically to changes. Example:
+
+jsx
+class Counter extends React.Component {
+  constructor() {
+    super();
+    this.state = { count: 0 };
+  }
+  render() {
+    return <h1>Count: {this.state.count}</h1>;
+  }
+}
+Unlike stateless components, stateful components store internal data.
+
+58. How to apply validation on props in React?
+React allows prop validation using PropTypes: Install it first:
+
+sh
+npm install prop-types
+Then apply it inside the component:
+
+jsx
+import PropTypes from "prop-types";
+
+function MyComponent({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
+
+MyComponent.propTypes = {
+  name: PropTypes.string.isRequired
+};
+This ensures name is always a string.
+
+59. What are the advantages of React?
+✔ Fast rendering (Virtual DOM) ✔ Reusable components for modular design ✔ Strong community support ✔ Efficient state management using hooks
+
+60. What are the limitations of React?
+❌ Fast-changing updates make learning difficult ❌ SEO limitations without server-side rendering ❌ Complex state management in large apps
+
+61. What are error boundaries in React v16?
+Error boundaries catch errors inside components to prevent app crashes. Example:
+
+jsx
+class ErrorBoundary extends React.Component {
+  constructor() {
+    super();
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    return this.state.hasError ? <h1>Error occurred!</h1> : this.props.children;
+  }
+}
+62. How were errors handled in React v15?
+React v15 did not have error boundaries, and errors could crash the whole application. Developers relied on try...catch inside lifecycle methods.
+
+63. What are recommended ways for static type checking?
+✔ PropTypes → Lightweight validation ✔ TypeScript → Better safety ✔ Flow → Static type checker for React
+
+64. What is the use of the react-dom package?
+react-dom handles DOM-related operations, such as rendering components in the real DOM.
+
+65. What is the purpose of the render method in react-dom?
+It mounts React components into the DOM:
+
+jsx
+ReactDOM.render(<App />, document.getElementById("root"));
+66. What is ReactDOMServer?
+It enables server-side rendering (SSR) in React for better performance and SEO.
+
+67. How to use innerHTML in React?
+React discourages direct innerHTML usage, but you can use dangerouslySetInnerHTML:
+
+jsx
+<div dangerouslySetInnerHTML={{ __html: "<p>Hello</p>" }} />
+Use this carefully to prevent XSS attacks.
+
+68. How to use styles in React?
+✔ Inline styles:
+
+jsx
+const styles = { color: "red", fontSize: "20px" };
+<p style={styles}>Styled text</p>
+✔ CSS files:
+
+css
+.text { color: red; }
+jsx
+<p className="text">Styled text</p>
+✔ Styled Components:
+
+jsx
+const StyledText = styled.p`
+  color: red;
+  font-size: 20px;
+`;
+69. How are events different in React?
+React uses Synthetic Events, which standardize event handling across browsers. Example:
+
+jsx
+function handleClick(e) {
+  e.preventDefault();
+  alert("Clicked!");
+}
+70. What happens if you use setState in the constructor?
+❌ It causes bugs since setState() is unavailable before mounting.
+
+71. What is the impact of indexes as keys?
+Using indexes as keys (key={index}) can cause rendering issues when data changes dynamically. Use unique IDs instead.
+
+72. Is it good to use setState() in componentWillMount()?
+🚨 No, it can cause unnecessary re-renders. Use componentDidMount() instead.
+
+73. What happens if you use props in the initial state?
+Props should not be directly copied to state because they may change unexpectedly.
+
+74. How do you conditionally render components?
+✔ Ternary Operator:
+
+jsx
+{isLoggedIn ? <Dashboard /> : <Login />}
+✔ && Short-circuiting:
+
+jsx
+{isAdmin && <AdminPanel />}
+
+75. Why do we need to be careful when spreading props on DOM elements?
+Spreading props (<Component {...props} />) can cause unintended behavior like: ✔ Passing unknown attributes ✔ Security risks (XSS attacks) ✔ Unexpected overrides
+
+76. How do you use decorators in React?
+Decorators wrap a component with extra functionality, often used for Higher-Order Components (HOCs). Example (using TypeScript):
+
+tsx
+@withLogger
+class MyComponent extends React.Component {
+  render() { return <h1>Hello</h1>; }
+}
+77. How do you memoize a component?
+Use React.memo() to prevent unnecessary re-renders:
+
+jsx
+const MemoComponent = React.memo(function MyComponent({ value }) {
+  return <p>{value}</p>;
+});
+78. How do you implement Server-Side Rendering (SSR)?
+SSR renders React components on the server, improving SEO. ✔ Use Next.js for built-in SSR support. ✔ Use ReactDOMServer.renderToString() for manual SSR.
+
+79. How to enable production mode in React?
+React runs in production mode by building the app:
+
+sh
+npm run build
+Then serve it with a web server.
+
+80. What is CRA and its benefits?
+Create React App (CRA) is a React tool that provides: ✔ Easy project setup ✔ Built-in webpack & Babel ✔ Hot reloading
+
+81. What are the lifecycle methods ordered in mounting?
+1️⃣ constructor() 2️⃣ render() 3️⃣ componentDidMount()
+
+82. What are the lifecycle methods deprecated in React 16?
+❌ componentWillMount() ❌ componentWillReceiveProps() ❌ componentWillUpdate()
+
+Use getDerivedStateFromProps() or hooks instead.
+
+83. What is the purpose of getDerivedStateFromProps()?
+✔ Used for syncing state with props before render. ✔ Runs before render(), unlike componentDidUpdate().
+
+84. What is the purpose of getSnapshotBeforeUpdate()?
+Used for getting the previous state before an update, typically for UI calculations.
+
+85. Do Hooks replace render props and Higher-Order Components (HOCs)?
+✔ Yes! Hooks like useContext() replace render props, while useMemo() replaces some HOCs.
+
+86. What is the recommended way for naming components?
+✔ Use PascalCase (MyComponent) ✔ Avoid generic names (Component1, TestComponent)
+
+87. What is a switching component?
+A component that conditionally renders different components based on props/state. Example:
+
+jsx
+function Page({ user }) {
+  return user.isAdmin ? <AdminPanel /> : <UserDashboard />;
+}
+88. Why do we need to pass a function to setState()?
+✔ React batches state updates asynchronously, so using:
+
+jsx
+this.setState(prevState => ({ count: prevState.count + 1 }));
+Ensures accurate updates.
+
+89. What is strict mode in React?
+Strict Mode (<React.StrictMode>) detects potential issues in development.
+
+90. What are React Mixins?
+Mixins allow sharing logic across multiple components, but they are deprecated.
+
+91. Why is isMounted() an anti-pattern?
+React doesn’t recommend using isMounted() because it leads to memory leaks. Instead, use cleanup functions in hooks.
+
+92. What are the Pointer Events supported in React?
+✔ onPointerDown ✔ onPointerMove ✔ onPointerUp
+
+93. Why should component names start with capital letters?
+✔ React differentiates components from HTML tags. ✔ <myComponent /> won’t work, but <MyComponent /> will.
+
+94. Are custom DOM attributes supported in React 16?
+✔ Yes, custom attributes like data-id="123" are now supported.
+
+95. Difference between constructor and getInitialState?
+✔ constructor() is used in ES6 classes ✔ getInitialState() was used in older createClass() components.
+
+96. How to loop inside JSX?
+Use .map() method:
+
+jsx
+{items.map(item => <p key={item.id}>{item.name}</p>)}
+97. How do you access props in attribute quotes?
+Use {} inside JSX:
+
+jsx
+<img src={imageUrl} alt={description} />
+98. What is React PropType array with shape?
+Define structured prop validation:
+
+jsx
+MyComponent.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    age: PropTypes.number
+  })
+};
+99. How to conditionally apply class attributes?
+Use template literals:
+
+jsx
+className={isActive ? "active" : "inactive"}
+100. Difference between React and ReactDOM?
+✔ React → Handles components & state ✔ ReactDOM → Handles rendering in the actual DOM
+
+101. Why is ReactDOM separated from React?
+Allows flexibility for React Native and ReactDOMServer.
+
+102. How to use the React <label> element?
+Attach htmlFor (instead of for in HTML):
+
+jsx
+<label htmlFor="inputId">Username</label>
+<input id="inputId" />
+103. How to combine multiple inline style objects?
+Use spread operator or Object.assign:
+
+jsx
+const styles = { ...baseStyle, ...extraStyle };
+104. How to re-render the view when the browser is resized?
+Use useEffect() with window.resize listener:
+
+jsx
+useEffect(() => {
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+105. Difference between setState and replaceState?
+✔ setState() merges state updates. ❌ replaceState() (deprecated) replaces entire state.
+
+106. How to listen to state changes?
+Use useEffect():
+
+jsx
+useEffect(() => {
+  console.log("State changed!", state);
+}, [state]);
+107. Recommended approach to remove an array element in state?
+Use filter() method:
+
+jsx
+setItems(prevItems => prevItems.filter(item => item.id !== idToRemove));
+108. Is it possible to use React without rendering HTML?
+✔ Yes! React can be used with React Native, Canvas, Three.js, etc.
+
+109. How to pretty-print JSON in React?
+Use JSON.stringify():
+
+jsx
+<pre>{JSON.stringify(data, null, 2)}</pre>
+110. Why can't you update props in React?
+Props should be immutable, only updated by parent components.
+
+111. How to focus an input element on page load?
+Use useRef():
+
+jsx
+const inputRef = useRef();
+useEffect(() => inputRef.current.focus(), []);
+112. Ways to update objects in state?
+✔ Use spread operator ({...state, newKey: value}) ✔ Use functional updates with setState()
+
+113. How to check React version at runtime?
+jsx
+console.log(React.version);
+
+
+118. How do you apply vendor prefixes to inline styles in React?
+React automatically handles vendor prefixes for inline styles. However, you can manually add them like this:
+
+jsx
+const styles = {
+  WebkitTransform: "rotate(45deg)", // Safari & Chrome
+  msTransform: "rotate(45deg)",     // Microsoft Edge
+  transform: "rotate(45deg)"        // Standard
+};
+
+<div style={styles}>Rotated Box</div>;
+Note: React converts vendor prefixes to the correct format in the DOM.
+
+119. How to import and export components using React and ES6?
+✔ Export a Component:
+
+jsx
+export default function MyComponent() {
+  return <h1>Hello, World!</h1>;
+}
+✔ Import a Component:
+
+jsx
+import MyComponent from "./MyComponent";
+Alternatively, named exports:
+
+jsx
+export function MyComponent() {}
+Then, import using {}:
+
+jsx
+import { MyComponent } from "./MyComponent";
+120. Why do React component names begin with a capital letter?
+✔ React differentiates components from HTML elements using uppercase naming. ✔ <myComponent /> won’t work, but <MyComponent /> will.
+
+121. Why is a component constructor called only once?
+✔ The constructor() method initializes a class component's state before mounting. ✔ React does not call the constructor again when state or props update.
+
+122. How to define constants in React?
+Use const for immutability:
+
+jsx
+const APP_TITLE = "React Interview Guide";
+console.log(APP_TITLE);
+✔ Define constants outside components to prevent unnecessary re-renders.
+
+123. How to programmatically trigger click events in React?
+Use useRef() or JavaScript event handling:
+
+jsx
+const buttonRef = useRef();
+
+useEffect(() => {
+  buttonRef.current.click(); // Triggers click on mount
+}, []);
+
+<button ref={buttonRef} onClick={() => alert("Clicked!")}>
+  Click Me
+</button>;
+This method automatically clicks the button when the component mounts.

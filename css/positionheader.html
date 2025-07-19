@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Header & Chat Button</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            position: sticky;
+            top: 0;
+            background-color:bisque;
+            padding: 15px 20px;
+            z-index: 100;
+        }
+        .navbar nav a{
+            text-decoration: none;
+            color: brown;
+            margin-right: 15px;
+        }
+        .chat-btn{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0b84ff;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Welcome!</h1>
+      <p>Scroll down to test the sticky header and floating chat button.</p>
+      <!-- Fill in a lot of content to make it scrollable -->
+      <div style="height: 2000px;"></div>
+    </section>
+  </main>
+
+  <button class="chat-btn">💬</button>
+
+</body>
+</html>

@@ -1,0 +1,899 @@
+						HTML/HTML5
+
+14. Explain HTML structure
+HTML (HyperText Markup Language) is the foundation of web pages. Its basic structure includes:
+
+<!DOCTYPE html>: Declares the document type.
+
+<html>: The root element.
+
+<head>: Contains metadata, styles, and scripts.
+
+<body>: Contains visible webpage content like text, images, links, and tables.
+
+15. What is HTML? How are HTML tags formed? Explain HTML comments.
+HTML: A markup language used to structure content on the web.
+
+HTML Tags: Formed using angle brackets (<tag> and </tag>), defining elements within a document.
+
+Comments: Written as <!-- This is a comment --> and are ignored by browsers.
+
+16. What is the use of the Anchor (<a>) tag? Explain two ways to specify a URL in the href attribute.
+Used to create hyperlinks.
+
+Ways to specify URLs in href:
+
+Absolute URL: "https://example.com" (direct link to another site).
+
+Relative URL: "page.html" (link within the same website).
+
+17. How to create a hyperlink in HTML?
+Use the <a> tag:
+
+html
+<a href="https://example.com">Click here</a>
+
+18. Relative paths make your hypertext links ________________.
+Dependent on the current location (relative to the directory).
+
+19. Which type of HTML link is defined in the following example?
+Could you provide the example? I’d be happy to clarify!
+
+20. Why are images used on web pages?
+They improve visual appeal, convey information, and enhance user experience.
+
+21. What is the default value of the target attribute in <a>?
+_self (opens in the same window).
+
+22. Types of lists in HTML:
+Ordered (<ol>)
+
+Unordered (<ul>)
+
+Definition (<dl>)
+
+23. HTML tags for creating tables & five brief explanations:
+<table>: Defines the table.
+
+<tr>: Defines a row.
+
+<td>: Defines a cell.
+
+<th>: Defines a header cell.
+
+<caption>: Adds a table title.
+
+24. What is a caption?
+A title or description for a table, written inside <caption>.
+
+25. Which attribute allows you to add descriptive text to a table?
+summary
+
+26. Which HTML attribute sets space between cells?
+cellspacing
+
+27. Which attribute spans table cells across columns?
+colspan
+
+28. Which has higher priority in a table: cell settings or table settings?
+Cell settings.
+
+29. HTML attribute values are usually enclosed in?
+HTML attribute values are typically enclosed in double ("") or single ('') quotes. Example:
+
+html
+<img src="image.jpg" alt="Example Image">
+
+30. HTML Entities. To display a less than sign we must write:
+Use &lt; to display < in HTML. Example:
+
+html
+
+&lt;div&gt;
+
+31. For a radio button to be marked as 'on', what is the recommended attribute and value?
+Use the checked attribute:
+
+html
+<input type="radio" name="option" value="1" checked>
+
+32. HTML5 - What is a new attribute for <input>?
+The placeholder attribute is new in HTML5, providing a hint inside the input field:
+
+html
+<input type="text" placeholder="Enter your name">
+
+33. Internal format of <input type="date"> in HTML5?
+It follows YYYY-MM-DD, complying with ISO 8601. Example:
+
+html
+<input type="date" value="2025-06-04">
+
+34. Input types in HTML:
+Some common types:
+
+text
+
+password
+
+radio
+
+checkbox
+
+file
+
+submit
+
+reset
+
+35. New input types in HTML5:
+HTML5 introduced:
+
+email
+
+url
+
+number
+
+range
+
+date
+
+time
+
+search
+
+color
+
+36. Use of <fieldset>?
+Groups related form fields for better structure and accessibility. Example:
+
+html
+<fieldset>
+  <legend>Personal Information</legend>
+  <label>Name: <input type="text"></label>
+</fieldset>
+
+37. Use of <nav> tag?
+Defines navigation links in a webpage. Example:
+
+html
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
+
+38. Difference between <span> and <div>?
+<span>: Inline container, used for small parts inside text.
+
+<div>: Block-level container, used for larger sections.
+
+39. How to embed JavaScript in HTML?
+Using <script> inside <head> or <body>:
+
+html
+<script>
+  alert("Hello, World!");
+</script>
+
+40. How to specify line breaks in HTML?
+Use <br> to break lines. Example:
+
+html
+<p>First line.<br>Second line.</p>
+
+41. Explain HTML5 Elements:
+HTML5 introduced new semantic elements like:
+
+<header>
+
+<footer>
+
+<section>
+
+<article>
+
+<aside>
+
+42. Tag for displaying video in HTML5?
+Use <video> with controls:
+
+html
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+43. HTML Event Attribute - When does onunload fire?
+It fires when a page is closed or navigated away from:
+
+html
+<body onunload="alert('Goodbye!')">
+
+
+
+
+
+
+
+
+
+1.	What is HTML? HTML (HyperText Markup Language) is the standard language used to create web pages. It provides the structure of a webpage using elements like headings, paragraphs, links, images, and more.
+2.	Who’s the founder of HTML? HTML was created by Tim Berners-Lee in 1991 while he was developing the World Wide Web.
+3.	What is <!DOCTYPE> in HTML? The <!DOCTYPE> declaration specifies the document type and version of HTML being used, ensuring that browsers render the page correctly.
+4.	What is <meta> tag? The <meta> tag provides metadata about the document, such as character encoding, viewport settings for responsiveness, and SEO-related descriptions.
+5.	How to navigate from one page to another page? You can use the <a> (anchor) tag with the href attribute to link to another page:
+
+<a href="page2.html">Go to Page 2</a>
+6.	What is an inline tag? Inline tags are HTML elements that do not start on a new line and only take up as much width as necessary. Examples include <span>, <b>, <i>, and <a>.
+7.	Which tag is used to set formatting on any text? Tags like <b> for bold, <i> for italic, <u> for underline, <mark> for highlighting, and <strong> for important text formatting are commonly used.
+8.	What is the use of <picture> tag? The <picture> tag helps in responsive images by allowing multiple image sources to be loaded depending on screen size or device resolution.
+9.	Which tags are dropped in the new version? In HTML5, several tags like <font>, <center>, <big>, and <strike> were removed as they are now handled via CSS.
+10.	Which attributes are dropped in the new version? Deprecated attributes include align in many elements, bgcolor, border, and frameborder, as these are now managed using CSS.
+11.	How many types of lists? HTML supports three types of lists:
+•	Ordered List (<ol>) for numbered lists.
+•	Unordered List (<ul>) for bulleted lists.
+•	Description List (<dl>) for term-definition pairs.
+12.	What is the use of the <iframe> tag? The <iframe> tag is used to embed another HTML page or external content within a webpage, such as Google Maps or YouTube videos.
+13.	Which tag is used to apply an ImageMap on an image? The <map> tag along with <area> elements is used to define clickable regions on an image.
+14.	What is the use of <details> and <summary> tags? <details> creates an expandable section, while <summary> provides a clickable heading for that section.
+15.	What is the use of <q> tag? The <q> tag is used to enclose short inline quotations, automatically adding quotation marks.
+16.     What is a table? A table in HTML is used to organize data in a structured format using rows and columns.
+17.     Which tags are used to create table rows and columns?
+•	<table>: Defines a table.
+•	<tr>: Defines a table row.
+•	<td>: Defines a table cell (column).
+•	<th>: Defines a header cell.
+18.  Describe <colgroup>. The <colgroup> tag is used to group multiple columns in a table and apply styling or attributes collectively.
+19.  What is the <embed> tag used for? The <embed> tag is used to embed external content like videos, audio, or interactive elements into a webpage.
+20.  Which tags are used to create an HTML layout? Common layout-related tags include <header>, <nav>, <section>, <article>, <aside>, <footer>, and <div>.
+21.  What is a semantic tag? Semantic tags clearly define the meaning of content, making it more accessible. Examples include <header>, <article>, <footer>, <nav>, and <section>.
+22.  What is a non-semantic tag? Non-semantic tags don’t convey meaning by themselves. Common examples include <div> and <span>.
+23.  What is the use of <div> and <span> tags?
+•	<div>: A block-level element used to group sections for styling/layout.
+•	<span>: An inline element used to style or manipulate part of text within another element.
+24.  What are the elements of an HTML form? A form includes elements like <input>, <textarea>, <label>, <button>, <select>, <option>, and <fieldset>.
+25.  Which main attributes affect the <form> tag? Important attributes include:
+•	action: Specifies the URL where data will be sent.
+•	method: Defines how data is sent (GET or POST).
+•	target: Specifies where to display the response.
+•	autocomplete: Enables or disables auto-fill.
+26.  List out <input> types. Some common <input> types are:
+•	text
+•	password
+•	email
+•	radio
+•	checkbox
+•	file
+•	submit
+•	reset
+•	date
+•	color
+•	range
+27.  What is <textarea> used for? The <textarea> tag is used for multi-line text input, allowing users to enter longer content than a standard input field.
+28.  Which tags are used to create a dropdown list?
+•	<select>: Defines the dropdown.
+•	<option>: Represents individual choices within the dropdown.
+29.  Which tags are used to create graphics on a webpage? The <canvas> and <svg> tags are used to create graphics.
+30.  What does <svg> stand for? Scalable Vector Graphics—It allows for drawing shapes, paths, and graphics that can scale without losing quality.
+31.  What is a tag? In HTML, a tag is an instruction that defines elements within a webpage. Tags are enclosed in angle brackets (<>), such as <p>, <a>, and <div>.
+32.  What is an attribute? Attributes provide additional information about an HTML tag. They appear inside the tag and define characteristics such as size, color, or functionality. Example:
+	<img src="image.jpg" alt="A beautiful image">
+	Here, src and alt are attributes of the <img> tag.
+33.  What is an element? An HTML element consists of an opening tag, content (sometimes optional), and a closing tag. Example:
+	<p>This is a paragraph.</p>
+34.  What are opening and closing tags?
+•	Opening tag: <p> (starts the element)
+•	Closing tag: </p> (ends the element) Some elements like <br> and <img> are self-closing.
+35.  Which tags are non-closing tags? These tags do not require a closing tag:
+•	<br> (line break)
+•	<hr> (horizontal rule)
+•	<img> (image)
+•	<input> (form input)
+36.  Which tag is used to set a favicon? The <link> tag is used to add a favicon inside <head>:
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+37.  What is the use of the target attribute in the <a> tag? The target attribute controls how the linked page opens:
+•	_self: Opens in the same tab (default)
+•	_blank: Opens in a new tab/window
+•	_parent: Opens in the parent frame
+•	_top: Opens in the full browser window
+
+
+
+
+
+
+						CSS/CSS3
+
+
+1. CSS Full Form CSS stands for Cascading Style Sheets, used to style HTML elements.
+
+
+2. Types of CSS
+	Inline CSS: Defined directly inside an HTML element using the style attribute.
+	Internal CSS: Written within a <style> tag inside the <head> section of an HTML document.
+	External CSS: Defined in a separate .css file and linked to an HTML file.
+
+
+3. Which CSS is Preferred First in an HTML File? The preference follows this hierarchy:
+	Inline CSS overrides internal and external styles.
+	Internal CSS overrides external styles.
+	External CSS is the least specific but keeps code clean.
+
+
+4.Which Tag Links a CSS File in HTML? The <link> tag is used to connect an external CSS file:
+	<link rel="stylesheet" href="styles.css">
+
+5.How to Set Google Font? Include a Google Fonts link inside <head>:
+	html
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	Then, use it in CSS:
+	css
+	body {
+   	font-family: 'Roboto', sans-serif;
+	}
+
+5. How Many Properties Are Used to Set a Background Image? Common background properties:
+	background-image
+	background-size
+	background-position
+	background-repeat
+	background-attachment
+	background-color
+
+7. Border-Radius Property Use The border-radius property creates rounded corners for elements.
+
+8.Use of background-origin and background-clip
+	background-origin controls where the background starts (padding-box, border-box, content-box).
+	background-clip controls where the background should be visible (padding-box, border-box, content-box).
+
+
+9.How to Set Gradient Colors on Borders? Use border-image with a gradient:
+	css
+	border-image: linear-gradient(red, blue) 1;
+
+10.Types of Gradient Colors
+	Linear Gradient (linear-gradient())
+	Radial Gradient (radial-gradient())
+	Conic Gradient (conic-gradient())
+
+
+11.What is a Gradient Color? A smooth transition between multiple colors, used for backgrounds and design effects.
+
+12.Use of filter Property Applies visual effects like blur, brightness, contrast, and more.
+
+13.Effect of display: flex Enables a flexible layout, making items adjust dynamically within a container.
+
+14.Effect of display: grid Allows elements to be arranged in a grid-like structure with defined rows and columns.
+
+
+15. How to Merge Cells in Grid? Use grid-column and grid-row properties:
+	grid-column: span 2;
+	grid-row: span 2;
+
+16.Effect of flex-wrap Property Controls whether items wrap within a flex container.
+
+17.Effect of place-content, place-self, and place-items These properties control alignment and positioning inside flex or grid containers.
+
+18.Descriptions of place-content, place-self, and place-items
+	place-content: Aligns content inside a container.
+	place-self: Aligns a single element within the container.
+	place-items: Aligns items within the container.
+
+
+19. Descriptions of justify-content, justify-items, justify-self
+	justify-content: Aligns items along the main axis.
+	justify-items: Aligns items within their respective containers.
+	justify-self: Aligns a single item.
+
+
+20. Descriptions of align-content, align-items, align-self
+	align-content: Controls spacing along the cross axis.
+	align-items: Aligns items within their container.
+	align-self: Aligns a specific item.
+
+
+21. Difference Between background-blend-mode and mix-blend-mode
+	background-blend-mode: Blends background layers.
+	mix-blend-mode: Blends an element with its surroundings.
+
+
+22. Difference Between backdrop-filter and filter Property
+	filter: Applies effects to an element.
+	backdrop-filter: Applies effects to the background behind an element.
+
+
+23. When Does the gap Property Affect Layouts? The gap property works in flex and grid layouts to control space between items.
+
+
+24. How to Apply align-content Property?
+	.container {
+  	display: flex;
+  	align-content: center;
+	}
+
+25. What is a Media Query? Media queries make websites responsive based on screen size:
+	@media (max-width: 600px) {
+  	body {
+    	background-color: lightblue;
+  	}	
+	}
+
+26. Which Property Makes Images Responsive? Use max-width and height:
+	img {
+  	max-width: 100%;
+  	height: auto;
+	}
+
+27. What is a CSS Transition? Defines smooth animation between states. Example:
+	div {
+  	transition: background-color 0.5s ease-in-out;
+	}
+
+28. What is transform and Its Functions? transform modifies elements with functions:
+	rotate()
+	scale()
+	translate()
+	skew()
+
+
+29. How to Create an Animation in CSS? Use @keyframes and animation:
+	@keyframes fadeIn {
+  		from { opacity: 0; }
+  		to { opacity: 1; }
+	}
+	div {
+  		animation: fadeIn 2s linear;
+	}
+
+20.How to Link One CSS File to Another? Use @import inside the main CSS file:
+	@import url("styles.css");
+
+
+31. List of CSS Selectors
+	Universal (*): Selects all elements.
+	Element (div): Selects all <div> elements.
+	Class (.classname): Selects elements with a specific class.
+	ID (#idname): Selects an element with a specific ID.
+	Attribute ([type="text"]): Selects elements based on attributes.
+	Sibling (+, ~): Selects adjacent or general sibling elements.
+	Child (>): Selects direct child elements.
+	Pseudo-classes (:hover, :nth-child(n)): Apply styles based on state.
+	Pseudo-elements (::before, ::after): Style parts of elements.
+
+
+32.Effect of Padding and Margin
+	Padding: Creates space inside the element (between content and border).
+	Margin: Creates space outside the element (between the element and others).
+
+
+33. Difference Between CSS, CSS2, and CSS3
+	CSS (1996): Basic styles.
+	CSS2 (1998): Improved layout options.
+	CSS3 (2001-present): Modular updates with features like flexbox, grid, animations, and gradients.
+
+34.Use of box-sizing
+	Controls how the total width and height of an element are calculated, preventing overflow issues.
+
+35. Use of box-shadow and text-shadow
+	box-shadow: Adds shadow effects to elements.
+	text-shadow: Adds shadow effects to text.
+
+
+36.When to Apply overflow
+	Manages content that exceeds container size (hidden, scroll, auto, visible).
+
+37. Text Properties
+	text-wrap: Defines how text breaks.
+	text-stroke: Adds a stroke around text (not widely supported).
+	text-indent: Controls the indentation of the first line.
+
+
+38. Use of top, bottom, left, and right
+	Positions elements when used with position: relative, absolute, or fixed.
+
+
+39. Use of z-index
+	Controls layering; higher values appear above lower values.
+
+
+40.Use of float and clear
+	float: Positions elements to the left or right.
+	clear: Prevents elements from wrapping around floating elements.
+
+
+41. What is the Box Model?
+	Represents an element’s layout with:
+	Content
+	Padding
+	Border
+	Margin
+
+
+42.How to Use max-width
+	div {
+  		max-width: 800px;
+	}
+	Prevents an element from exceeding the specified width.
+
+
+43.Pseudo-class vs. Pseudo-element
+	Pseudo-class (:hover): Applies styles based on state.
+	Pseudo-element (::before): Styles part of an element.
+
+
+44. Effect of opacity
+	Controls transparency (opacity: 0 hides, opacity: 1 is fully visible).
+
+
+45. Use of object-fit and object-position
+	object-fit: Adjusts how images fill containers.
+	object-position: Defines the placement inside the container.
+
+
+46. How to Apply CSS Comments	
+	/* This is a CSS comment */
+
+
+47. Difference Between visibility: hidden and display: none
+	visibility: hidden: Hides an element but keeps its space.
+	display: none: Removes the element entirely from the layout.
+
+
+
+1. What does CSS stand for? CSS stands for Cascading Style Sheets, which is used to style and format HTML elements.
+
+
+2. Which HTML tag is used to define an internal style sheet? The <style> tag is used inside the <head> section to define internal CSS styles.
+
+
+3. Which HTML attribute is used to define inline CSS? The style attribute allows you to apply inline CSS directly within an element:
+	html
+	<p style="color: red;">This text is red.</p>
+
+
+4. Which is the correct CSS syntax? CSS syntax follows this structure:
+	css
+	selector {
+   	property: value;
+	}
+	Example:
+
+	css
+	h1 {
+   	color: blue;
+   	font-size: 20px;
+	}
+
+5.TRUE/FALSE – CSS is case-sensitive? False – CSS itself is not case-sensitive, but class and ID names are case-sensitive when used in HTML.
+
+
+6. How do you insert a comment in a CSS file? Comments in CSS use /* */ syntax:
+	/* This is a CSS comment */
+
+
+7. Which of the following tells the browser where you want to apply the rule? Selectors define which elements the CSS rules apply to.
+
+
+8. What is NOT an advantage of using CSS files? One disadvantage is dependency on external files—if the CSS file is missing or blocked, styles may not load properly.
+
+9.True or False: The borders of an element can vary only up to 2 sides? False – Borders can be applied to all four sides (top, right, bottom, and left), each with different styles.
+
+
+10. Which property is used to specify table borders in CSS? The border property is used to define table borders:
+	table {
+   		border: 1px solid black;
+	}
+
+11. CSS shorthand to set borders on all four sides You can use the border-width property:
+	border-width: 10px 1px 5px 20px;
+	(Order: top, right, bottom, left)
+
+12. TRUE/FALSE – The borders of an element can vary only up to 2 sides? False – You can set different border styles, colors, and widths on all four sides independently.
+
+13. Correct use of border-radius border-radius is used to round corners:
+	border-radius: 10px;
+	You can also set individual corners:
+	border-radius: 10px 5px 20px 1px; /* Top-left, top-right, bottom-right, bottom-left */
+
+14.Property to change background color background-color is used to set the background:
+	background-color: lightblue;
+
+	
+15. CSS property to change text color color property changes text color:
+	color: red;
+
+
+16. CSS property to control text size font-size defines text size:
+	font-size: 16px;
+
+17.Correct CSS syntax for making elements bold
+	font-weight: bold;
+
+18.Types of element positioning in CSS
+	static (default)
+	relative
+	absolute
+	fixed
+	sticky
+
+19.Property that controls background image scrolling behaviour
+	background-attachment determines if a background image scrolls:
+	background-attachment: fixed;
+
+20.How to handle content overflow? The overflow property manages overflowing content:
+	overflow: hidden; /* Hide overflowing content */
+	overflow: scroll; /* Add scrollbar */
+	overflow: auto; /* Scroll when needed */
+
+21.What is padding? 
+	Padding is the space inside an element, between its content and border:
+	padding: 10px;
+
+22.Property to change the left margin of an element
+	margin-left: 20px;
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+										JAVA SCRIPT
+
+
+
+1.JavaScript is developed by Netscape Communications (originally created by Brendan Eich in 1995).
+
+2.JavaScript is a typed language? No, JavaScript is a dynamically typed language, meaning variables do not require explicit type definitions.
+
+3.Are Java and JavaScript the same? No, Java and JavaScript are completely different languages with distinct purposes, syntaxes, and execution environments.
+
+4.Which attribute of the form tag is not set using the document object in JavaScript? The action attribute cannot be directly modified using the document object.
+
+5.What property would you use to redirect a visitor to another page? The window.location property is used for redirection in JavaScript (e.g., window.location.href = "https://example.com";).
+
+6.What looping structures are available in JavaScript? JavaScript supports several loops: for, while, do-while, and forEach (for arrays).
+
+7.What is the meaning of the "this" keyword in JavaScript? The this keyword refers to the object that is currently executing the function, and its value depends on the context in which it is called.
+
+8.Choose the client-side JavaScript object: This part of the question seems incomplete, but common client-side JavaScript objects include window, document, navigator, history, and localStorage.
+
+9.What is JavaScript? JavaScript is a scripting language primarily used to create dynamic and interactive web content. It enables functionalities like animations, form validations, and event handling.
+
+10.Who is the founder of JavaScript? JavaScript was created by Brendan Eich in 1995 while working at Netscape Communications.
+
+11.What was the first name of JavaScript? Initially, JavaScript was named LiveScript, but it was later renamed to JavaScript to capitalize on Java’s popularity.
+
+12.Describe JavaScript versions: JavaScript has evolved through various versions. Key updates include:
+
+	ES5 (2009): Introduced strict mode and JSON support.
+
+	ES6 (2015): Added arrow functions, let & const, template literals, classes, and promises.
+
+	ES7, ES8, ES9, etc.: Continued to add features like async/await, object spread/rest operators, and more.
+
+13.How to apply JavaScript in a webpage? You can use JavaScript in a webpage by including it within the <script> tag inside the HTML document. Example:
+	<script>
+    		alert("Hello, World!");
+	</script>
+14.What is Vanilla JS? Vanilla JS refers to plain JavaScript, meaning JavaScript without any libraries or frameworks like React or jQuery.
+
+15.JavaScript is which type of language? JavaScript is a dynamically typed and interpreted programming language.
+
+16.How many types of JavaScript comments? JavaScript supports two types of comments:
+	Single-line comment: // This is a comment
+	Multi-line comment:
+		/* This is a 
+   		multi-line comment */
+
+17.How to apply JavaScript comments? Use // for single-line comments and /* */ for multi-line comments.
+
+18.What is a variable? How to create it? A variable is a container for storing data. You can declare a variable using:
+	var name = "John";
+	let age = 25;
+	const pi = 3.14;
+
+19.What is the difference between global and block-level variables?
+	Global variables are accessible throughout the program.
+	Block-level variables (let & const) are restricted to a block {}.
+
+20.What is datatype? List out its types: Datatypes classify data stored in variables. JavaScript has:
+	String
+	Number
+	Boolean
+	Undefined
+	Null
+	Object
+	Symbol
+
+21.List operator types: Operators in JavaScript include:
+	Arithmetic: +, -, *, /, %
+	Comparison: ==, ===, !=, <, >
+	Logical: &&, ||, !
+	Assignment: =, +=, -=
+	Bitwise: &, |, ^, ~
+	Ternary: condition ? value1 : value2
+
+22.List conditional statements or decision-making:
+	if
+	else if
+	else
+	switch
+
+23.When do we use if condition? We use if statements when we need to execute a block of code only if a condition is true.
+24.What do we use the switch statement for? The switch statement is used when multiple conditions need to be evaluated, making code more readable than multiple if-else statements. Example:
+	let day = "Monday";
+		switch (day) {
+  	case "Monday":
+    		console.log("Start of the week!");
+    	break;
+  	case "Friday":
+    	console.log("Weekend is near!");
+    	break;
+  	default:
+    		console.log("It's just another day.");
+	}
+25.What is a loop? A loop is a programming structure that repeats a block of code until a specified condition is met.
+
+26.List types of loops in JavaScript:
+	for loop
+	while loop
+	do-while loop
+	forEach loop (used with arrays)
+
+27.What is a function? A function is a reusable block of code designed to perform a specific task. Example:
+	function greet(name) {
+  		return "Hello, " + name;
+	}
+		console.log(greet("Alice")); // Output: Hello, Alice
+28.What is an object? How many ways to create an object? An object in JavaScript is a collection of key-value pairs. It can be created in multiple ways:
+	Object literal: { name: "John", age: 30 }
+	Constructor function: new Object()
+	Class-based: class Person { constructor(name) { this.name = name; } }
+	Using Object.create(): let obj = Object.create(protoObject);
+
+29.What is an array? How many ways to create an array? An array is a collection of values stored in an ordered sequence. Ways to create an array:
+	Using []: let arr = [1, 2, 3];
+	Using new Array(): let arr = new Array(1, 2, 3);
+
+30.How to create a digital clock on a webpage? JavaScript's setInterval() function can be used to update the time dynamically:
+	function updateClock() {
+  		let now = new Date();
+  	document.getElementById("clock").innerText = now.toLocaleTimeString();
+	}
+	setInterval(updateClock, 1000);
+31.How to use the Date function in JavaScript? The Date object provides methods to work with dates and times:
+	let now = new Date();
+	console.log(now.toDateString()); // Displays the current date
+	console.log(now.getFullYear()); // Gets the year
+32.How to use Math methods? The Math object provides mathematical functions:
+	console.log(Math.round(4.7));  // Rounds to nearest integer
+	console.log(Math.random());    // Generates a random number
+	console.log(Math.sqrt(25));    // Returns square root
+33.What is Boolean? Boolean is a data type that represents true or false.
+
+34.List out JavaScript selectors:
+	getElementById()
+	getElementsByClassName()
+	getElementsByTagName()
+	querySelector()
+	querySelectorAll()
+
+35.How to use getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll()?
+	document.getElementById("myElement");       // Selects an element by ID
+	document.getElementsByClassName("myClass"); // Selects elements by class name
+	document.getElementsByTagName("p");         // Selects all <p> elements
+	document.querySelector(".myClass");         // Selects the first matching element
+	document.querySelectorAll("div");           // Selects all <div> elements
+36.What is the difference between innerHTML and innerText?
+	innerHTML gets or sets HTML content.
+	innerText retrieves only the text inside an element.
+
+37.What is RegEx? RegEx (Regular Expression) is a pattern used for text matching and manipulation.
+
+38.Why do we use RegEx?
+
+39.Validating input fields
+	Searching within text
+	Formatting strings
+
+40.List out window objects:
+	window.alert()
+	window.confirm()
+	window.prompt()
+	window.location
+	window.history
+	window.navigator
+
+41.List out history objects:
+	history.back()
+	history.forward()
+	history.go()
+
+42.How many types of popup boxes/dialog boxes?
+	alert()
+	confirm()
+	prompt()
+
+43.What is an event? An event is an interaction triggered by the user (e.g., clicks, keystrokes, mouse movements).
+
+44.What is an event handler? A function that executes when an event occurs.
+
+45.What is event handling? The process of managing and responding to user events in JavaScript.
+
+46.How many types of events?
+	Mouse events (click, hover)
+	Keyboard events (keypress, keydown)
+	Form events (submit, change)
+	Window events (load, resize)
+
+47.What is the difference between onload and onunload events?
+	onload: Executes when the page loads.
+	onunload: Executes when the user leaves the page.
+48.What is the difference between onblur, onchange, and onfocus events?
+	onblur: Fires when an element loses focus.
+	onchange: Fires when the value of an input field changes and loses focus.
+	onfocus: Fires when an element gains focus.
+
+49.What is the difference between keypress and keydown events?
+	keypress: Detects when a key is pressed, but it is now deprecated.
+	keydown: Fires when any key is pressed, including non-character keys like Shift.
+
+50.What is the difference between setTimeout() and setInterval()?
+	setTimeout(): Runs a function once after a delay.
+	setInterval(): Runs a function repeatedly at defined intervals.
+
+51.How to stop setInterval()? Use clearInterval(intervalID) to stop the interval:
+	let interval = setInterval(() => console.log("Running"), 1000);
+	clearInterval(interval);
+
+52.What is a cookie? How to create it? A cookie is a small piece of data stored in a user's browser. To create a cookie:
+	document.cookie = "username=John; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+
+53.How to set CSS dynamically on a webpage? Use JavaScript to modify styles:
+	document.getElementById("myElement").style.color = "red";
+54.What is classList and className property?
+	classList: Provides methods like add(), remove(), toggle() for handling classes.
+	className: Sets or returns the complete class name as a string.
+
+55.How to add CSS or structure on a webpage? Use classList.add() or modify styles directly:
+	document.getElementById("myElement").classList.add("newClass");
+
+56.How to remove CSS or structure on a webpage? Use classList.remove():
+	document.getElementById("myElement").classList.remove("oldClass");
+57.How is the contains() method used? Checks if an element has a specific class: 
+	document.getElementById("myElement").classList.contains("active");
+58.What is an arrow function? When was it introduced? Arrow functions (=>) offer a concise way to write functions. Introduced in ES6 (2015):
+	const greet = (name) => `Hello, ${name}`;
+59.Explain addEventListener() and removeEventListener() methods.
+	addEventListener(): Adds an event handler without overwriting existing ones.
+	removeEventListener(): Removes a previously attached event handler.
+	let btn = document.getElementById("myButton");
+	const handler = () => console.log("Clicked!");
+	btn.addEventListener("click", handler);
+	btn.removeEventListener("click", handler);
+60.How to add structure dynamically in HTML? Use innerHTML or createElement():
+	let div = document.createElement("div");
+	div.innerHTML = "<h2>Hello</h2>";
+	document.body.appendChild(div);
+61.Describe arithmetic operators. Arithmetic operators perform mathematical calculations:
+	Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%).
+
+62.What is the increment and decrement operator?
+	Increment (++): Increases a value by 1.
+	Decrement (--): Decreases a value by 1.
+
+63.How many types of increment and decrement operators? Two types:
+	Pre (++x, --x): Changes value immediately.
+	Post (x++, x--): Changes value after execution.
+
+64.What is the ternary operator? A shorthand for if-else:
+	let age = 18;
+	let message = age >= 18 ? "Adult" : "Minor";
+	console.log(message);
+
+65.What is DOM and BOM?
+	DOM (Document Object Model): Represents HTML elements in JavaScript.
+	BOM (Browser Object Model): Includes browser-related objects (window, history, navigator).
+
+66.How many built-in methods are available in the Date object? Common methods include:
+	getFullYear(), getMonth(), getDate(), getHours(), getMinutes(), getSeconds().
+	Formatting options: toDateString(), toLocaleString()

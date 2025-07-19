@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: violet;
+    color: white;
+}
+
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav li a{
+    color: bisque;
+    font-weight: bold;
+}
+
+.form input{
+    padding: 8px;
+    border: none;
+    margin: 4px;
+}
+
+.form button{
+    padding: 8px;
+    background-color: whitesmoke;
+    color: violet;
+    border: violet;
+    border-radius:15px ;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+install JSON file globally =>
+npm install -g json-server
+
+for run json file => json-server --watch ./src/JSON/Employee.json
+
+API : http://localhost:3000/employee
+
+
+
+
+{
+  "employee": [
+    {
+      "id": "1",
+      "employeename": "Piyu",
+      "city": "surat",
+      "designation": "SoftwareDeveloper",
+      "mobileno": 7345278969,
+      "salary":35000,
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg"
+    },
+    {
+      "id": "2",
+      "employeename": "Dixit",
+      "city": "palanpur",
+      "designation": "Manager",
+      "mobileno": 9856704578,
+      "salary":40000,
+      "profile": "https://th.bing.com/th/id/OIP.s_HoeMmvEH3pF1_Gljye8wHaHa?pid=ImgDet&w=186&h=186&c=7&dpr=1.4"
+    },
+    {
+      "id": "3",
+      "employeename": "priyanshi joshi",
+      "city": "Navsari",
+      "mobileno": "94567834567",
+      "designation": "Manager",
+      "salary": "40000",
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg"
+    },
+    {
+      "id": "4",
+      "employeename": "Ayushi",
+      "city": "Navsari",
+      "mobileno": "7456389087",
+      "designation": "Employee",
+      "salary": "35000",
+      "profile": "https://static.vecteezy.com/system/resources/previews/007/343/092/non_2x/female-profile-flat-color-icon-vector.jpg",
+      "empname": "ayushi"
+    }
+  ]
+}

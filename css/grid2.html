@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width:767px) and (max-width:1023px) {
+            .gallery{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (min-width:1024px) {
+            .gallery{
+                grid-template-columns: repeat(3,1fr);
+            }
+        } 
+    </style>
+
+<!-- Device Type	    Width Range	   Typical Breakpoint Used
+        Mobile	            0 – 767px	    max-width: 767px
+        Tablet	        768px – 1023px	    min-width: 768px and max-width: 1023px
+    Small Desktop	    1024px – 1279px	    min-width: 1024px
+    Large Desktop	    1280px and above	min-width: 1280px -->
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300" alt="Image 2">
+        <img src="https://via.placeholder.com/300" alt="Image 1">
+        <img src="https://via.placeholder.com/300" alt="Image 4">
+        <img src="https://via.placeholder.com/300" alt="Image 3">
+        <img src="https://via.placeholder.com/300" alt="Image 6">
+        <img src="https://via.placeholder.com/300" alt="Image 5">
+    </div>
+
+</body>
+</html>
